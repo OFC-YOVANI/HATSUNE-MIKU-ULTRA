@@ -29,6 +29,7 @@ let caption = `╭─────────────◆
 ┃✯│/administrargrupo
 ┃✯│/permisosowner
 ┃✯│/cuentasoficiales
+┃✯│/instalarbot
 ┃✯╰───────────◆
 ╰━━━━━━━━━━━──⊷
 ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ
