@@ -1,4 +1,4 @@
-# `🌀𝐇𝐀𝐓𝐒𝐔𝐍𝐄 𝐌𝐈𝐊𝐔-𝐁𝐎𝐓⛄`
+# `♦️HATSUNE-MIKU-ULTRA💥`
 
 ### `🏓DUDAS SOBRE EL BOT?, CONTACTANOS🍁`
 <a href="http://wa.me/5212411719888" target="blank"><img src="https://img.shields.io/badge/OFC-YOVANI_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
@@ -38,7 +38,24 @@
 - CLONAR EL REPOSITORIO [Aqui](https://github.com/OFC-YOVANI/HATSUNE-MIKU/fork)
 - CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/OFC-YOVANI/HATSUNE-MIKU/blob/master/config.js)
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾` 
+### `—◉ 👾 ACTIVAR EN TERMUX 👾
+PRIMERA OPCIÓN `
+- ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+```bash
+termux-setup-storage
+```
+
+```bash
+pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
+```
+
+```bash
+wget -O - https://raw.githubusercontent.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA/master/install.sh | bash
+```
+
+
+### `—◉ 👾 ACTIVAR EN TERMUX 👾
+SEGUNDA OPCIÓN ` 
 - ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
 cd && termux-setup-storage
