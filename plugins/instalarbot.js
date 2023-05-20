@@ -1,1 +1,77 @@
-const _0x1fb464=_0x110e;(function(_0x6db67f,_0x39d6e6){const _0x3cefb0=_0x110e,_0x5e115a=_0x6db67f();while(!![]){try{const _0x4b455b=-parseInt(_0x3cefb0(0x13c))/0x1*(-parseInt(_0x3cefb0(0x13d))/0x2)+parseInt(_0x3cefb0(0x146))/0x3+parseInt(_0x3cefb0(0x148))/0x4+parseInt(_0x3cefb0(0x14e))/0x5+parseInt(_0x3cefb0(0x144))/0x6+-parseInt(_0x3cefb0(0x143))/0x7*(parseInt(_0x3cefb0(0x14d))/0x8)+-parseInt(_0x3cefb0(0x13a))/0x9*(parseInt(_0x3cefb0(0x139))/0xa);if(_0x4b455b===_0x39d6e6)break;else _0x5e115a['push'](_0x5e115a['shift']());}catch(_0xdc18af){_0x5e115a['push'](_0x5e115a['shift']());}}}(_0x4238,0x81634));import _0x28debc from'node-fetch';function _0x4238(){const _0x502fbf=['buffer','2237622AbAWbt','command','3934040eAwQeK','log','chat','https://i.imgur.com/yrQ1Uic.jpg','fail','4754072gENHzi','2191300WqBXWh','10bdTbIP','13692447fAvNwK','@s.whatsapp.net','32138vqkTKs','14nEFdwh','╭─────────────◆\x0a│✯𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰\x0a│✯╭──────────◆\x0a│✯│ʜᴏʟᴀ:','split','sender','✯\x0a│✯╰───────────◆\x0a│✯╭──────────◆\x0a┃✯│✯-𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻-⦿\x0a┃✯╰────────────◆\x0a┃✯╭──────────◆\x0a┃✯│https://youtu.be/-bxpZwU_A3o\x0a┃✯╰────────────◆\x0a│✯╭──────────◆\x0a┃✯│✯-𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂\x20𝚃𝙴𝚁𝙼𝚄𝚇-⦿\x0a┃✯╰────────────◆\x0a┃✯╭──────────◆\x0a┃✯│cd\x20&&\x20termux-setup-storage\x0a┃✯│apt-get\x20update\x20-y\x20&&\x20apt-get\x20upgrade\x20-y\x0a┃✯│pkg\x20install\x20-y\x20git\x20nodejs\x20ffmpeg\x20imagemagick\x20&&\x20pkg\x20install\x20yarn\x20\x0a┃✯│git\x20clone\x20https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git\x20&&\x20cd\x20HATSUNE-MIKU-ULTRA\x0a┃✯│yarn\x20\x0a┃✯│npm\x20install\x0a┃✯│npm\x20update\x0a┃✯│npm\x20start\x0a┃✯╰────────────◆\x0a│✯╭──────────◆\x0a┃✯│✯-𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂\x20𝚃𝙴𝚁𝙼𝚄𝚇-⦿\x0a┃✯│opción\x202\x20estos\x20comandos\x20son\x20para\x20los\x20que\x20no\x20pudieron\x20hacer\x20con\x20los\x20comandos\x20normales\x20estos\x20comandos\x20lo\x20van\x20a\x20instalar\x20solito\x20\x0a┃✯╰────────────◆\x0a┃✯╭──────────◆\x0a┃✯│termux-setup-storage\x0a┃✯│pkg\x20update\x20-y\x20&&\x20pkg\x20upgrade\x20-y\x20&&\x20pkg\x20install\x20-y\x20bash\x20&&\x20pkg\x20install\x20-y\x20wget\x20&&\x20pkg\x20install\x20yarn\x0a┃✯│wget\x20-O\x20-\x20https://raw.githubusercontent.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA/master/install.sh\x20|\x20bash\x0a┃✯╰───────────◆\x0a╰━━━━━━━━━━━──⊷\x0aᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ\x0aɴᴜᴍᴇʀᴏ:Wa.me/5212412377467','cat.jpg','7ESRFwy','1518024GoIZDd'];_0x4238=function(){return _0x502fbf;};return _0x4238();}let handler=async(_0x15bc5e,{conn:_0x23f2a3,text:_0x2adf9d})=>{const _0x3819a3=_0x110e;try{let _0x4345e0=await _0x28debc(_0x3819a3(0x14b)),_0x173b59=await _0x4345e0[_0x3819a3(0x145)](),_0x109109='@'+_0x15bc5e[_0x3819a3(0x140)][_0x3819a3(0x13f)](_0x3819a3(0x13b))[0x0],_0x152b93=(_0x3819a3(0x13e)+_0x109109+_0x3819a3(0x141))['trim']();_0x23f2a3['sendFile'](_0x15bc5e[_0x3819a3(0x14a)],_0x173b59,_0x3819a3(0x142),_0x152b93,_0x15bc5e);}catch(_0x65f587){console[_0x3819a3(0x149)](_0x65f587);throw'*Error!*';}};handler[_0x1fb464(0x147)]=/^(instalarbot|Lnstalarbot|sc)$/i,handler[_0x1fb464(0x14c)]=null;function _0x110e(_0x13c65b,_0x4c1831){const _0x42384a=_0x4238();return _0x110e=function(_0x110e38,_0x3d18bf){_0x110e38=_0x110e38-0x139;let _0x41bda2=_0x42384a[_0x110e38];return _0x41bda2;},_0x110e(_0x13c65b,_0x4c1831);}export default handler;
+import fetch from 'node-fetch'
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
+try {
+let pp = imagen3
+let img = await(await fetch('https://i.imgur.com/JP52fdP.jpg')).buffer()
+let d = new Date(new Date + 3600000)
+let locale = 'es'
+let week = d.toLocaleDateString(locale, { weekday: 'long' })
+let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime)
+let user = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length 
+let more = String.fromCharCode(8206)
+let readMore = more.repeat(850)   
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let str = `╭─────────────◆
+┃✯𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰
+┃✯-𝗛ᴏʟᴀ,➟${taguser}
+┃✯🍁᭢━━━━━━━━━᭥🍁᭢
+┃✯│▢ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ
+┃✯│▢ғᴇᴄʜᴀ:➟${date}
+┃✯│▢ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ:➟${uptime}
+┃✯╰▢ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}
+╰━━━━━━━━━━━──⊷
+ꨄ︎-----  -----  -----  -----  -----ꨄ︎
+╭─────────────◆
+┃✯-📽️𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻🎥-⦿
+┃✯🍁᭢━━━━━━━━━᭥🍁᭢
+┃✯╭──────────◆
+┃✯│https://youtu.be/-bxpZwU_A3o
+┃✯╰https://youtu.be/LqXJpxICLtE
+╰━━━━━━━━━━━──⊷
+ꨄ︎-----  -----  -----  -----  -----ꨄ︎
+╭─────────────◆
+┃✯-💥𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇💥-⦿
+┃✯🍁᭢━━━━━━━━━᭥🍁᭢
+┃✯╭──────────◆
+┃✯│cd && termux-setup-storage
+┃✯│apt-get update -y && apt-get upgrade -y
+┃✯│pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
+┃✯│git clone https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git && cd HATSUNE-MIKU-ULTRA
+┃✯│yarn 
+┃✯│npm install
+┃✯│npm update
+┃✯╰npm start
+╰━━━━━━━━━━━──⊷
+ꨄ︎-----  -----  -----  -----  -----ꨄ︎
+╭─────────────◆
+┃✯-💥𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇💥-⦿
+┃✯🍁᭢━━━━━━━━━᭥🍁᭢
+┃✯│opción 2 estos comandos son para los que no pudieron hacer con los comandos normales estos comandos lo van a instalar solito 
+┃✯│termux-setup-storage
+┃✯│pkg update -y && pkg upgrade -y && pkg install -y bash && pkg install -y wget && pkg install yarn
+┃✯╰wget -O - https://raw.githubusercontent.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA/master/install.sh | bash
+╰━━━━━━━━━━━──⊷
+ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ
+ɴᴜᴍᴇʀᴏ:Wa.me/5212412377467`.trim()
+if (m.isGroup) {
+conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}, { quoted: m })    
+} else {    
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
+conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}, { quoted: fkontak2 })}
+} catch {
+conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
+}}
+handler.command = /^(instalarbot|Lnstalarbot|sc)$/i
+handler.exp = 50
+handler.fail = null
+export default handler
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
