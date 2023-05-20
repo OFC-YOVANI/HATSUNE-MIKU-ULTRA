@@ -27,7 +27,7 @@ title = await yt.title
 size = await yt.audio[q].fileSizeH
 await conn.sendFile(m.chat, dl_url, title + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
 }
-if (command == 'play2') {
+if (command == 'play90') {
 conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `╭─────────────◆ 
 ┃✯-- ༴⃟🌹๋ོ࣭ꦿ⁩PLAY-YouTube2--⦿
 ┃✯╭──────────◆
@@ -48,8 +48,8 @@ await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}
 }
 } catch (e) {
 }}
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
+handler.help = ['play', 'play90'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = ['play', 'play2']
+handler.command = ['play', 'play90']
 
 export default handler
