@@ -1,1 +1,98 @@
-const _0x5bc38d=_0x288b;function _0x9142(){const _0x449c5f=['32HXGnRD','40980940VmucYH','4307764cLXBPV','145qrkbqj','video','tags','command','error.mp3','audio/mp4','205XOSbKf','3238cYKxSo','799380dMuLdR','1601481AuPBmU','1086048bhTVJA','158694wUfdqK','downloader','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙴𝚁𝚁𝙾𝚁,\x20𝙿𝙾𝚁\x20𝙵𝙰𝚅𝙾𝚁\x20𝚅𝚄𝙴𝙻𝚅𝙰\x20𝙰\x20𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*','𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰','result','play.1','map','⌛\x20_Cargando..._\x0a▰▰▰▱▱▱▱▱▱','chat','sendFile','20QgDQer','audio','reply','error.mp4','json','\x20<texto>','play2'];_0x9142=function(){return _0x449c5f;};return _0x9142();}(function(_0x5bf922,_0x5452a1){const _0x3a240e=_0x288b,_0x1d63e6=_0x5bf922();while(!![]){try{const _0x2d1dab=-parseInt(_0x3a240e(0x1b2))/0x1*(-parseInt(_0x3a240e(0x1b9))/0x2)+parseInt(_0x3a240e(0x1ba))/0x3+-parseInt(_0x3a240e(0x1b1))/0x4+parseInt(_0x3a240e(0x1b8))/0x5*(-parseInt(_0x3a240e(0x1bd))/0x6)+-parseInt(_0x3a240e(0x1bb))/0x7*(parseInt(_0x3a240e(0x1af))/0x8)+parseInt(_0x3a240e(0x1bc))/0x9*(-parseInt(_0x3a240e(0x1a8))/0xa)+parseInt(_0x3a240e(0x1b0))/0xb;if(_0x2d1dab===_0x5452a1)break;else _0x1d63e6['push'](_0x1d63e6['shift']());}catch(_0x483468){_0x1d63e6['push'](_0x1d63e6['shift']());}}}(_0x9142,0xdde81));import _0x5a1c69 from'node-fetch';let handler=async(_0x4929cc,{command:_0x16f939,conn:_0x4a8b6a,text:_0x310f50})=>{const _0x3df0f3=_0x288b;if(!_0x310f50)throw'[❗𝐈𝐍𝐅𝐎❗]\x20𝙽𝙾𝙼𝙱𝚁𝙴\x20𝙳𝙴\x20𝙻𝙰\x20𝙲𝙰𝙽𝙲𝙸𝙾𝙽\x20𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴,\x20𝙿𝙾𝚁\x20𝙵𝙰𝚅𝙾𝚁\x20𝙸𝙽𝙶𝚁𝙴𝚂𝙴\x20𝙴𝙻\x20𝙲𝙾𝙼𝙰𝙽𝙳𝙾\x20𝙼𝙰𝚂\x20𝙴𝙻\x20𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾\x20𝙾\x20𝙴𝙽𝙻𝙰𝙲𝙴\x20𝙳𝙴\x20𝙰𝙻𝙶𝚄𝙽𝙰\x20𝙲𝙰𝙽𝙲𝙸𝙾𝙽\x20𝙾\x20𝚅𝙸𝙳𝙴𝙾\x20𝙳𝙴\x20𝚈𝙾𝚄𝚃𝚄𝙱𝙴\x0a\x0a*—◉\x20𝙴𝙹𝙴𝙼𝙿𝙻𝙾:\x0a#play2\x20Farruko\x20beba\x20*';try{let _0x3a6b2d=await _0x5a1c69('https://api.lolhuman.xyz/api/ytplay2?apikey='+lolkeysapi+'&query='+_0x310f50);if(_0x16f939==_0x3df0f3(0x1a3)){_0x4a8b6a[_0x3df0f3(0x1aa)](_0x4929cc[_0x3df0f3(0x1a6)],'⌛\x20_Cargando..._\x0a▰▰▰▱▱▱▱▱▱',_0x4929cc);let _0x4ce79d=await _0x3a6b2d[_0x3df0f3(0x1ac)](),_0x51e120=_0x4a8b6a['sendMessage'](_0x4929cc[_0x3df0f3(0x1a6)],{'audio':{'url':_0x4ce79d['result'][_0x3df0f3(0x1a9)]},'fileName':_0x3df0f3(0x1b6),'mimetype':_0x3df0f3(0x1b7)},{'quoted':_0x4929cc});if(!_0x51e120)return _0x4a8b6a['sendFile'](_0x4929cc[_0x3df0f3(0x1a6)],_0x4ce79d[_0x3df0f3(0x1a2)]['audio'],_0x3df0f3(0x1b6),null,_0x4929cc,![],{'mimetype':_0x3df0f3(0x1b7)});}if(_0x16f939=='play2'){_0x4a8b6a[_0x3df0f3(0x1aa)](_0x4929cc[_0x3df0f3(0x1a6)],_0x3df0f3(0x1a5),_0x4929cc);let _0x29a99a=await _0x3a6b2d[_0x3df0f3(0x1ac)]();_0x4a8b6a[_0x3df0f3(0x1a7)](_0x4929cc[_0x3df0f3(0x1a6)],_0x29a99a[_0x3df0f3(0x1a2)][_0x3df0f3(0x1b3)],_0x3df0f3(0x1ab),_0x3df0f3(0x1a1),_0x4929cc);}}catch(_0x1b13f7){_0x4929cc['reply'](_0x3df0f3(0x1a0));}};handler['help']=['play.1',_0x5bc38d(0x1ae)][_0x5bc38d(0x1a4)](_0x350019=>_0x350019+_0x5bc38d(0x1ad)),handler[_0x5bc38d(0x1b4)]=[_0x5bc38d(0x19f)],handler[_0x5bc38d(0x1b5)]=[_0x5bc38d(0x1a3),'play2'];function _0x288b(_0x3a2b58,_0x592d61){const _0x91422=_0x9142();return _0x288b=function(_0x288bb0,_0x485191){_0x288bb0=_0x288bb0-0x19f;let _0x4c3d93=_0x91422[_0x288bb0];return _0x4c3d93;},_0x288b(_0x3a2b58,_0x592d61);}export default handler;
+import fetch from 'node-fetch'
+import yts from 'yt-search'
+import ytdl from 'ytdl-core'
+import axios from 'axios'
+let handler = async (m, {command, conn, text}) => {
+if (!text) throw `[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴 𝙻𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙼𝙰𝚂 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴/𝚃𝙸𝚃𝚄𝙻𝙾 𝙾 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽𝙰 𝙲𝙰𝙽𝙲𝙸𝙾𝙽 𝙾 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚈𝙾𝚄𝚃𝚄𝙱𝙴\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:\n#play.1 Good Feeling - Flo Rida*`
+try {
+if (command == 'play.1') {
+await m.reply(`*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴀᴜᴅɪᴏ...⏳`)
+await m.reply(`⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱`)
+try {  
+let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)    
+let json = await res.json()
+let aa = await conn.sendMessage(m.chat, { audio: { url: json.result.audio }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })
+if (!aa) return await conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })
+} catch {  
+let mediaa = await ytPlay(text)
+let audiocore = mediaa.result2[0].audio || mediaa.result2[1].audio || mediaa.result2[2].audio || mediaa.result2
+conn.sendMessage(m.chat, { audio: { url: audiocore }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })}}
+if (command == 'play.2') {
+await m.reply(`*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴠɪᴅᴇᴏ...⏳`)
+await m.reply(`⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱`)
+try {   
+let mediaa = await ytPlayVid(text)
+await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })   
+} catch {
+let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)    
+let json = await res.json()
+await conn.sendFile(m.chat, json.result.video, 'error.mp4', `_𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭_`, m)}}
+} catch (e) {
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
+}}
+handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
+handler.tags = ['downloader']
+handler.command = ['play.1', 'play.2']
+export default handler
+
+function bytesToSize(bytes) {
+return new Promise((resolve, reject) => {
+const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+if (bytes === 0) return 'n/a';
+const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)), 10);
+if (i === 0) resolve(`${bytes} ${sizes[i]}`);
+resolve(`${(bytes / (1024 ** i)).toFixed(1)} ${sizes[i]}`)})};
+
+async function ytMp3(url) {
+return new Promise((resolve, reject) => {
+ytdl.getInfo(url).then(async(getUrl) => {
+let result = [];
+for(let i = 0; i < getUrl.formats.length; i++) {
+let item = getUrl.formats[i];
+if (item.mimeType == 'audio/webm; codecs=\"opus\"') {
+let { contentLength } = item;
+let bytes = await bytesToSize(contentLength);
+result[i] = { audio: item.url, size: bytes }}};
+let resultFix = result.filter(x => x.audio != undefined && x.size != undefined) 
+let tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].audio}`);
+let tinyUrl = tiny.data;
+let title = getUrl.videoDetails.title;
+let thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
+resolve({ title, result: tinyUrl, result2: resultFix, thumb })}).catch(reject)})}
+
+async function ytMp4(url) {
+return new Promise(async(resolve, reject) => {
+ytdl.getInfo(url).then(async(getUrl) => {
+let result = [];
+for(let i = 0; i < getUrl.formats.length; i++) {
+let item = getUrl.formats[i];
+if (item.container == 'mp4' && item.hasVideo == true && item.hasAudio == true) {
+let { qualityLabel, contentLength } = item;
+let bytes = await bytesToSize(contentLength);
+result[i] = { video: item.url, quality: qualityLabel, size: bytes }}};
+let resultFix = result.filter(x => x.video != undefined && x.size != undefined && x.quality != undefined) 
+let tiny = await axios.get(`https://tinyurl.com/api-create.php?url=${resultFix[0].video}`);
+let tinyUrl = tiny.data;
+let title = getUrl.videoDetails.title;
+let thumb = getUrl.player_response.microformat.playerMicroformatRenderer.thumbnail.thumbnails[0].url;
+resolve({ title, result: tinyUrl, rersult2: resultFix[0].video, thumb })}).catch(reject)})};
+
+async function ytPlay(query) {
+return new Promise((resolve, reject) => {
+yts(query).then(async(getData) => {
+let result = getData.videos.slice( 0, 5 );
+let url = [];
+for (let i = 0; i < result.length; i++) { url.push(result[i].url) }
+let random = url[0];
+let getAudio = await ytMp3(random);
+resolve(getAudio)}).catch(reject)})};
+
+async function ytPlayVid(query) {
+return new Promise((resolve, reject) => {
+yts(query).then(async(getData) => {
+let result = getData.videos.slice( 0, 5 );
+let url = [];
+for (let i = 0; i < result.length; i++) { url.push(result[i].url) }
+let random = url[0];
+let getVideo = await ytMp4(random);
+resolve(getVideo)}).catch(reject)})};
