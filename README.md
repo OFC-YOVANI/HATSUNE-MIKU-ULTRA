@@ -111,7 +111,7 @@ npm start
 ```
 
 ```bash
-> rm -rf MikuSession
+> rm Session-activa
 ```
 
 ```bash

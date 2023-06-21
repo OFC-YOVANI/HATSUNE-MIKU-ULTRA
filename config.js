@@ -100,9 +100,10 @@ global.wm = '©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍\n⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽�
 global.igfg = '⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰 ✍'
 global.wait = '⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱'
 
-global.imagen1 = fs.readFileSync('./src/Menu2.jpg')
-global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
-global.imagen3 = fs.readFileSync('./src/Me.jpg')
+global.imagen1 = fs.readFileSync('./views/grupo.jpg')
+global.imagen2 = fs.readFileSync('./views/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./views/bot.jpg')
+global.imagen4 = fs.readFileSync('./views/nuevobot.jpg')
 global.mods = [] 
 
 global.multiplier = 65
