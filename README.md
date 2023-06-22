@@ -111,7 +111,7 @@ npm start
 ```
 
 ```bash
-> rm Session-activa
+> rm -rf Session-activa
 ```
 
 ```bash
