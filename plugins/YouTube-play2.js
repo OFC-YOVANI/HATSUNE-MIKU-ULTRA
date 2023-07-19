@@ -89,7 +89,7 @@ throw "*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅
 }
 handler.help = ["play3", "play4"].map((v) => v + " < busqueda >")
 handler.tags = ["downloader"]
-handler.command = /^play3?$/i
+handler.command = /^play3|play4?$/i
 handler.exp = 0
 handler.register = true
 export default handler
