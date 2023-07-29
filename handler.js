@@ -1368,7 +1368,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     } catch (e) {
                     } finally {
                     let apii = await this.getFile(pp)
-                    const antiArab = JSON.parse(fs.readFileSync('./src/antiArab.json'))
+                    const antiArab = JSON.parse(fs.readFileSync('./views/antiArab.json'))
                     const userPrefix = antiArab.some(prefix => user.startsWith(prefix))                        
                     const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
                     const isBotAdminNn = botTt2?.admin === "admin" || false
@@ -1434,7 +1434,7 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍;;;\nFN:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nORG:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nEND:VCARD`
+   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍;;;\nFN:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nORG:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nEND:VCARD`
     await this.sendMessage(nk.from, { contacts: { displayName: '⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
@@ -1482,7 +1482,7 @@ global.dfail = (type, m, conn) => {
        botAdmin: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴾᵃʳᵃ ᴾᵒᵈᵉʳ ᵁˢᵃʳ ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᴱˢ ᴺᵉᶜᵉˢᵃʳⁱᵒ Qᵘᵉ ᴱˡ ᴮᵒᵗ ˢᵉᵃ ᴬᵈᵐⁱⁿⁱˢᵗʳᵃᵈᵒʳ ʸ ᴬᶜᶜᵉᵈᵉʳ ᴬᵈᵐⁱⁿ ᴬ ᴱˢᵗᵉ ᴺᵘᵐᵉʳᵒ',
        unreg: '✨ᴴᵒˡᵃ ᵇⁱᵉⁿᵛᵉⁿⁱ@ ᵃ ⁿᵘᵉˢᵗʳᵃ 💯ᶜᵒᵐᵘⁿⁱᵈᵃᵈ ᵈᵉ ᴴᵃᵈᵉˢ-ᵇᵒᵗ ᵖᵃʳᵃ ᵖᵒᵈᵉʳ ᵘˢᵃʳ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ᵈᵉˡ ᵇᵒᵗ ᵉˢ ⁿᵉᶜᵉˢᵃʳⁱᵒ qᵘᵉ ᵗᵉ ᵉⁿᶜᵘᵉⁿᵗʳᵉˢ\n📃ʳᵉᵍⁱˢᵗʳᵃᵈᵒ ᵉⁿ ᵐⁱ ᵇᵃˢᵉ ᵈᵉ ᵈᵃᵗᵒˢ ᵖᵃʳᵃ ʳᵉᵍⁱˢᵗʳᵃʳᵗᵉ ᵘˢᵃ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ˢⁱᵍᵘⁱᵉⁿᵗᵉˢ\n\n🪪/ʳᵉᵍ ⁿᵒᵐᵇʳᵉ.ᵉᵈᵃᵈ\nᵁⁿᵒ ᵉʲᵉᵐᵖˡᵒ\n🪪/ᴿᵉᵍ ᴴᵃᵈᵉˢ.²²\n\n📌ᴱˢᵖᵉʳᵒ qᵘᵉ ʰᵃʸᵃˢ ᵉⁿᵗᵉⁿᵈⁱᵈᵒ ʸ ᵖᵘᵉᵈᵃˢ ˢᵉʳ ʳᵉᵍⁱˢᵗʳᵃᵈᵒ ᵉⁿ ᵐⁱ ᵇᵃˢᵉ ᵈᵉ ᵈᵃᵗᵒˢ ᵖᵃʳᵃ qᵘᵉ ᵖᵘᵉᵈᵃˢ ʰᵃᶜᵉʳ ᵘˢᵒ ᵈᵉˡ ᵇᵒᵗ🪀',
        restrict: '[⚠️ᴬˡᵉʳᵗᵃ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᴱˢᵗᵃ ᴿᵉˢᵗʳⁱⁿᵍⁱᵈᵒ/ᴰᵉˢᵃᶜᵗⁱᵛᵃ ᴾᵒʳ ᴰᵉˢⁱᶜⁱᵒⁿ ᴰᵉˡ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ/ᴬ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ'
-       }[type]
+      }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
     let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })  
