@@ -1,73 +1,66 @@
-import fs from 'fs'
-import { watchFile, unwatchFile } from 'fs'
-import chalk from 'chalk'
-import { fileURLToPath } from 'url'
+import {watchFile, unwatchFile} from 'fs';
+import chalk from 'chalk';
+import {fileURLToPath} from 'url';
+import fs from 'fs'; 
+import cheerio from 'cheerio';
+import fetch from 'node-fetch';
+import axios from 'axios';
+import moment from 'moment-timezone';
 
 global.owner = [
   ['5212411719888', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
   ['5212412377467', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
-  ['5212411347465', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
-  ['5212412377467', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
-]
-global.suittag =['5212412477467']
+];
+global.suittag =['5212412477467'];
 global.mods = []
-global.prems = ['5212412474767'], 
-global.prems = ['5212412377467'],
-global.APIs = { 
+global.prems = ['5212412474767'];
+global.reportes_solicitudes = ['5212412377467'];
 
-  amel: 'https://melcanz.com',
-  bx: 'https://bx-hunter.herokuapp.com',
-  nrtm: 'https://nurutomo.herokuapp.com',
+global.openai_key = 'sk-0';
+
+global.openai_org_id = 'org-3';
+
+global.keysZens = ['LuOlangNgentot', 'c2459db922', '37CC845916', '6fb0eff124', 'hdiiofficial', 'fiktod', 'BF39D349845E', '675e34de8a', '0b917b905e6f'];
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())];
+global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63'];
+global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())];
+global.keysneoxrrr = ['5VC9rvNx', 'cfALv5'];
+global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())];
+global.lolkeysapi = ['BrunoSobrino_2']; // ['GataDios']
+global.itsrose = ['4b146102c4d500809da9d1ff'];
+
+global.APIs = {
   xteam: 'https://api.xteam.xyz',
-  nzcha: 'http://nzcha-apii.herokuapp.com',
-  bg: 'http://bochil.ddns.net',
-  fdci: 'https://api.fdci.se',
   dzx: 'https://api.dhamzxploit.my.id',
-  bsbt: 'https://bsbt-api-rest.herokuapp.com',
-  zahir: 'https://zahirr-web.herokuapp.com',
-  zeks: 'https://api.zeks.me',
-  hardianto: 'https://hardianto-chan.herokuapp.com',
-  pencarikode: 'https://pencarikode.xyz', 
-  LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  adiisus: 'https://adiixyzapi.herokuapp.com',
   lol: 'https://api.lolhuman.xyz',
-  pencarikode: 'https://pencarikode.xyz',
-  Velgrynd: 'https://velgrynd.herokuapp.com',
-  rey: 'https://server-api-rey.herokuapp.com',
-  hardianto: 'http://hardianto-chan.herokuapp.com',
-  shadow: 'https://api.reysekha.xyz',
-  apialc: 'https://api-alc.herokuapp.com',
-  botstyle: 'https://botstyle-api.herokuapp.com',
-  neoxr: 'https://neoxr-api.herokuapp.com',
-  ana: 'https://anabotofc.herokuapp.com/',
-  kanx: 'https://kannxapi.herokuapp.com/',
-  dhnjing: 'https://dhnjing.xyz'
-},
-  
-global.APIKeys = { 
-  'https://api-alc.herokuapp.com': 'ConfuMods',
-  'https://api.reysekha.xyz': 'apirey',
-  'https://melcanz.com': 'F3bOrWzY',
-  'https://bx-hunter.herokuapp.com': 'Ikyy69',
-  'https://api.xteam.xyz': '5bd33b276d41d6b4',
-  'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://bsbt-api-rest.herokuapp.com': 'benniismael',
-  'https://api.zeks.me': 'apivinz',
-  'https://hardianto-chan.herokuapp.com': 'hardianto',
-  'https://pencarikode.xyz': 'pais', 
-  'https://leyscoders-api.herokuapp.com': 'MIMINGANZ', 
-  'https://server-api-rey.herokuapp.com': 'apirey',
-  'https://api.lolhuman.xyz': '9b817532fadff8fc7cb86862',
-  'https://botstyle-api.herokuapp.com': 'Eyar749L',
-  'https://neoxr-api.herokuapp.com': 'yntkts',
-  'https://anabotofc.herokuapp.com/': 'AnaBot'
-}
+  neoxr: 'https://api.neoxr.my.id',
+  zenzapis: 'https://api.zahwazein.xyz',
+  akuari: 'https://api.akuari.my.id',
+  akuari2: 'https://apimu.my.id',
+  fgmods: 'https://api-fgmods.ddns.net',
+  botcahx: 'https://api.botcahx.biz.id',
+  ibeng: 'https://api.ibeng.tech/docs',
+  rose: 'https://api.itsrose.site',
+  popcat: 'https://api.popcat.xyz',
+  xcoders: 'https://api-xcoders.site',
 
-global.packname = '𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰 '
-global.author = '©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍'
+},
+global.APIKeys = {
+  'https://api.xteam.xyz': `${keysxteam}`,
+  'https://api.lolhuman.xyz': 'GataDios',
+  'https://api.neoxr.my.id': `${keysneoxr}`,
+  'https://api.zahwazein.xyz': `${keysxxx}`,
+  'https://api-fgmods.ddns.net': 'fg-dylux',
+  'https://api.botcahx.biz.id': 'Admin',
+  'https://api.ibeng.tech/docs': 'tamvan',
+  'https://api.itsrose.site': 'Rs-Zeltoria',
+  'https://api-xcoders.site': 'Frieren',
+};
+global.packname = '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
+global.author = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒'
 global.vs = '1.10.90'
 global.version = vs
-global.gt = '⫷᭄ʜᴀᴅᴇs-ʙᴏᴛ-ᴍᴅ﹏✍'
+global.gt = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒'
 global.hadesbot = gt
 global.yt = 'https://youtu.be/aPu9wQi-z8U'
 global.youtube = yt
@@ -96,17 +89,18 @@ global.envio = eeg
 global.eg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*'
 global.exito = eg
 
-global.wm = '©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍\n⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰 ✍'
-global.igfg = '⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰 ✍'
+global.wm = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒\n⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
+global.igfg = '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
 global.wait = '⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱'
 
-global.imagen1 = fs.readFileSync('./views/grupo.jpg')
-global.imagen2 = fs.readFileSync('./views/nuevobot.jpg') 
-global.imagen3 = fs.readFileSync('./views/bot.jpg')
-global.imagen4 = fs.readFileSync('./views/nuevobot.jpg')
+global.imagen1 = fs.readFileSync('./lib/img/descargas.jpg')
+global.imagen2 = fs.readFileSync('./lib/img/nuevobot.jpg') 
+global.imagen3 = fs.readFileSync('./lib/img/bot.jpg')
+global.imagen4 = fs.readFileSync('./lib/img/grupo.jpg')
+global.imagen5 = fs.readFileSync('./lib/img/Menu.jpg')
+global.imagen6 = fs.readFileSync('./lib/img/ifo.jpg')
+global.imagen7 = fs.readFileSync('./lib/img/minecraft.jpg')
 global.mods = [] 
-
-global.multiplier = 65
 
 global.rpg = {
   emoticon(string) {

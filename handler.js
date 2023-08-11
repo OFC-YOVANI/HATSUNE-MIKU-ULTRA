@@ -7,9 +7,6 @@ import { unwatchFile, watchFile } from 'fs'
 import fs from 'fs'
 import chalk from 'chalk'
 
-/**
- * @type {import('@adiwajshing/baileys')}
- */
 const { proto } = (await import('@adiwajshing/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function () {
@@ -17,10 +14,6 @@ const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function (
     resolve()
 }, ms))
 
-/**
- * Handle messages upsert
- * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['messages.upsert']} groupsUpdate 
- */
 export async function handler(chatUpdate) {
     this.msgqueque = this.msgqueque || []
     if (!chatUpdate)
@@ -33,7 +26,6 @@ export async function handler(chatUpdate) {
 	
 if (global.chatgpt.data === null) await global.loadChatgptDB();	
 	
-/*------------------------------------------------*/	
     try {
         m = smsg(this, m) || m
         if (!m)
@@ -42,7 +34,7 @@ if (global.chatgpt.data === null) await global.loadChatgptDB();
         m.money = false
         m.limit = false
         try {
-            // TODO: use loop to insert data instead of this
+            
             let user = global.db.data.users[m.sender]
 
 	    
@@ -50,7 +42,6 @@ let chatgptUser = global.chatgpt.data.users[m.sender];
             if (typeof chatgptUser !== "object")
                 global.chatgpt.data.users[m.sender] = [];
 		
-/*------------------------------------------------*/
             if (typeof user !== 'object')
                 global.db.data.users[m.sender] = {}
             if (user) {
@@ -1345,10 +1336,6 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
     }
 }
 
-/**
- * Handle groups participants update
- * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['group-participants.update']} groupsUpdate 
- */
 export async function participantsUpdate({ id, participants, action }) {
     if (opts['self']) return
     if (this.isInit) return
@@ -1362,13 +1349,13 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = './views/avatar_contact.png'
+                    let pp = './lib/img/avatar_contact.png'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
                     let apii = await this.getFile(pp)
-                    const antiArab = JSON.parse(fs.readFileSync('./views/antiArab.json'))
+                    const antiArab = JSON.parse(fs.readFileSync('./lib/img/antiArab.json'))
                     const userPrefix = antiArab.some(prefix => user.startsWith(prefix))                        
                     const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
                     const isBotAdminNn = botTt2?.admin === "admin" || false
@@ -1404,10 +1391,6 @@ this.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] })
     }
 }
 
-/**
- * Handle groups update
- * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
- */
 export async function groupsUpdate(groupsUpdate) {
     if (opts['self'])
         return
@@ -1432,10 +1415,9 @@ export async function callUpdate(callUpdate) {
     if (nk.isGroup == false) {
     if (nk.status == "offer") {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
-    //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
-    //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍;;;\nFN:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nORG:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '⫷᭄𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰﹏✍', contacts: [{ vcard }] }}, {quoted: callmsg})
+    
+   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒;;;\nFN:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nORG:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -1484,9 +1466,8 @@ global.dfail = (type, m, conn) => {
        restrict: '[⚠️ᴬˡᵉʳᵗᵃ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᴱˢᵗᵃ ᴿᵉˢᵗʳⁱⁿᵍⁱᵈᵒ/ᴰᵉˢᵃᶜᵗⁱᵛᵃ ᴾᵒʳ ᴰᵉˢⁱᶜⁱᵒⁿ ᴰᵉˡ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ/ᴬ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ'
       }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
-    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git' }}}}, aa)
+    let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git' }}}}, aa)
     if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })  
-    //if (msg) return m.reply(msg)
 }
 
 let file = global.__filename(import.meta.url, true)
