@@ -38,7 +38,7 @@ let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻�
 ➟ *.menustickers*
 ➟ *.propietario*
 ➟ *.enable comandos para el owner*
-➟ *.instalarbot Hades*
+➟ *.instalarbot miku*
 ➟ *.ip servidor de minecraft*
 ➟ *.Miku*
 ➟ *.perfil*
