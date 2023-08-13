@@ -39,6 +39,8 @@ let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻�
 ➟ *.unbanchat desbanea el chat*
 ➟ *.grupo abrir/cerrar*
 ➟ *.actualizar*
+➟ *.dsowner esperando-mensajes*
+➟ *.fixmsgespera esperando-mensajes*
 ⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
