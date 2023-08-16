@@ -110,7 +110,7 @@ return { conversation: "hello, i'm OFC-YOVANI" }},
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['HATSUNE-MIKU-ULTRA','Edge','9.7.0'],
+browser: ['HATSUNE-MIKU-ULTRA','Safari','9.7.0'],
 version,
 defaultQueryTimeoutMs: undefined  
 }
