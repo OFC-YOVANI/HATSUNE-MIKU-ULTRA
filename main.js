@@ -19,7 +19,8 @@ import { makeWASocket, protoType, serialize } from './lib/simple.js';
 import { Low, JSONFile } from 'lowdb';
 import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
 import store from './lib/store.js'
-const { DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBaileysVersion } = await import('@adiwajshing/baileys')
+const {proto} = (await import('@adiwajshing/baileys')).default
+const {DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBaileysVersion, makeCacheableSignalKeyStore} = await import('@adiwajshing/baileys')
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
@@ -109,13 +110,14 @@ return { conversation: "hello, i'm OFC-YOVANI" }},
 msgRetryCounterMap,
 logger: pino({ level: 'silent' }),
 auth: state,
-browser: ['HATSUNE-MIKU-ULTRA','Safari','9.7.0'],
+browser: ['HATSUNE-MIKU-ULTRA','Edge','9.7.0'],
 version,
 defaultQueryTimeoutMs: undefined  
 }
 
 global.conn = makeWASocket(connectionOptions)
 conn.isInit = false
+conn.well = false
 
 if (!opts['test']) {
 if (global.db) setInterval(async () => {
@@ -177,20 +179,18 @@ if (isNewLogin) conn.isInit = true
 const code = lastDisconnect?.error?.output?.statusCode || lastDisconnect?.error?.output?.payload?.statusCode
 if (code && code !== DisconnectReason.loggedOut && conn?.ws.readyState !== CONNECTING) {
 console.log(await global.reloadHandler(true).catch(console.error))
-global.timestamp.connect = new Date
+global.timestamp.connect = new Date;
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined) {
-console.log(chalk.yellow('🚩ㅤEscanea este codigo QR, el codigo QR expira en 60 segundos.'))
+console.log(chalk.yellow('🔳 Escanea este codigo QR, el codigo QR expira en 60 segundos.'))
 }
 if (connection == 'open') {
-console.log(chalk.yellow('▣──────────────────────────────···\n│\n│❧ 𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 ✅\n│\n▣──────────────────────────────···'))}
-
+console.log(chalk.yellow('⟥⟝⟢⟨𝙲𝙾𝙽𝙴𝙲𝚃𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿⟩⟣⟞⟤'))}
 if (connection == 'close') {
-console.log(chalk.yellow(`🚩ㅤConexion cerrada, por favor borre la carpeta ${global.authFile} y reescanee el codigo QR`))}
-}
-
+console.log(chalk.yellow(`🔴 Conexion cerrada, por favor borre la carpeta ${global.authFile} y reescanee el codigo QR`))}
 process.on('uncaughtException', console.error)
+}
 
 let isInit = true;
 let handler = await import('./handler.js')
@@ -218,8 +218,8 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '@subject*\n @user*\n*𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾/𝙰* '
-conn.bye = '@user*\n 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾'
+conn.welcome = '⟥⟝⟢⟨*@user*⟩⟣⟞⟤\n• *HOLA 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾/𝙰@subject*\n• *𝙰𝚅𝙸𝚂𝙾 𝙸𝙼𝙿𝙾𝚁𝚃𝙰𝙽𝚃𝙴:*\n• *𝙿𝚘𝚛 𝚏𝚊𝚟𝚘𝚛 𝙻𝚎𝚎 𝚕𝚊𝚜 𝚛𝚎𝚐𝚕𝚊𝚜 𝚍𝚎𝚕 𝚐𝚛𝚞𝚙𝚘 𝚙𝚊𝚛𝚊 𝚚𝚞𝚎 𝚎𝚟𝚒𝚝𝚎𝚜 𝚜𝚎𝚛 𝚎𝚕𝚒𝚖𝚒𝚗𝚊𝚍𝚘 𝚢 𝚎𝚟𝚒𝚝𝚎𝚜 𝚝𝚎𝚗𝚎𝚛 𝚙𝚛𝚘𝚋𝚕𝚎𝚖𝚊𝚜 𝚌𝚘𝚗 𝚌𝚛𝚎𝚊𝚍𝚘𝚛 𝚍𝚎𝚕 𝚐𝚛𝚞po*\n• *@desc*\n⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣─⬒'
+conn.bye = '⟥⟝⟢⟨*@user*⟩⟣⟞⟤\n• *ADIOS 𝙷𝙰𝚂𝚃𝙰 𝙿𝚁𝙾𝙽𝚃𝙾*\n⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒'
 conn.spromote = '*@user 𝚂𝙴 𝚂𝚄𝙼𝙰 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂!!*'
 conn.sdemote = '*@user 𝙰𝙱𝙰𝙽𝙳𝙾𝙽𝙰 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙴 𝙰𝙳𝙼𝙸𝙽𝚂 !!*'
 conn.sDesc = '*𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
@@ -321,19 +321,15 @@ Object.freeze(global.support)
 setInterval(async () => {
 if (stopped == 'close') return
 var a = await clearTmp()        
-console.log(chalk.cyanBright(`\n▣───────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁TMP ]──────────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣───────────────────────────────────────···\n`))
+console.log(chalk.cyanBright(`'⟥⟝⟢⟨𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁-TMP\n\n⟥⟝⟢⟨𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂⟩⟣⟞⟤`))
 }, 180000)
 setInterval(async () => {
     await purgeSession()
-console.log(chalk.cyanBright(`\n▣────────[ AUTOPURGESESSIONS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`))
-}, 1000 * 60 * 60)
-setInterval(async () => {
-     await purgeSessionSB()
-console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_SESSIONS_SUB-BOTS ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`))
+console.log(chalk.cyanBright(`'⟥⟝⟢⟨AUTOPURGE-SESSIONS⟩⟣⟞⟤⟥⟝⟢⟨ARCHIVOS ELIMINADOS⟩⟣⟞⟤`))
 }, 1000 * 60 * 60)
 setInterval(async () => {
     await purgeOldFiles()
-console.log(chalk.cyanBright(`\n▣────────[ AUTO_PURGE_OLDFILES ]───────────···\n│\n▣─❧ ARCHIVOS ELIMINADOS ✅\n│\n▣────────────────────────────────────···\n`))
+console.log(chalk.cyanBright(`\n'⟥⟝⟢⟨AUTO_PURGE_OLDFILES⟩⟣⟞⟤\n\n⟥⟝⟢⟨ARCHIVOS ELIMINADOS⟩⟣⟞⟤`))
 }, 1000 * 60 * 60)
 _quickTest()
 .then(() => conn.logger.info(`Ƈᴀʀɢᴀɴᴅᴏ．．．\n`))
