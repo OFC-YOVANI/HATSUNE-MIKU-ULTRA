@@ -20,9 +20,7 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰* ⟩⟣⟞⟤
 ➟ *𝗛ᴏʟᴀ,➟${taguser}*
 ➟ *ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ*
-➟ *ғᴇᴄʜᴀ:➟${date}*
-➟ *ᴛɪᴇᴍᴘᴏ:➟${uptime}* 
-➟ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}*
+➟ *Hola Bienvenid@ a la lista de grupos del bot ofc miku/hades espero que puedas entra a nuestra comunidad de bots gracias por tu atencion*
 ➟ *ᴄᴜᴇɴᴛᴀs ᴏғᴄ:* *https://atom.bio/ofc_yovani_hades*
 ⬒ ─⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⟣─ ⬒
 

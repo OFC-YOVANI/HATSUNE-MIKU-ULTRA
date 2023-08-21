@@ -20,10 +20,11 @@ var document = doc[Math.floor(Math.random() * doc.length)]
 let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰* ⟩⟣⟞⟤
 ➟ *𝗛ᴏʟᴀ,➟${taguser}*
 ➟ *ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ*
-➟ *ғᴇᴄʜᴀ:➟${date}*
-➟ *ᴛɪᴇᴍᴘᴏ:➟${uptime}* 
-➟ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}*
 ➟ *ᴄᴜᴇɴᴛᴀs ᴏғᴄ:* *https://atom.bio/ofc_yovani_hades*
+➟ *Hola bienvenido al menu principal de miku-bot por favor escribe el menu que quieres usar, si deseas convertirte en un sub-bot usa el comando siguientes*
+➟ *.qr|.serbot|.jadibot*
+➟ *.stop /este comando es para detener serbot*
+➟ *.bots /este comando es para ver los sub-bot conectados*
 ⬒ ─⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⟣─ ⬒
 
 ⬒ ─⟢⟨ *CHATGPT* ⟩⟣─ ⬒
@@ -43,7 +44,8 @@ let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻�
 ➟ *.Miku*
 ➟ *.perfil*
 ➟ *.redes*
-⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒`.trim()
+⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒
+*ғᴇᴄʜᴀ:➟${date}* *ᴛɪᴇᴍᴘᴏ:➟${uptime}* `.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
