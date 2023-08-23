@@ -29,6 +29,8 @@ let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻�
 ➟ *.animeinfo <nombre>*
 ➟ *.play nombre de tu canción*
 ➟ *.play2 nombre de tu video*
+➟ *.audio nombre de tu canción*
+➟ *.video nombre de tu video*
 ➟ *.play3 nombre de tu canción,doc*
 ➟ *.play4 nombre de tu video,doc*
 ➟ *.Spotify nombre de tu canción*
