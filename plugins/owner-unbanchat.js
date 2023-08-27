@@ -1,10 +1,1 @@
-let handler = async (m) => {
-global.db.data.chats[m.chat].isBanned = false
-m.reply('*│✔️│🌴𝚎𝚜𝚝𝚎 𝚌𝚑𝚊𝚝 𝚏𝚞𝚎 𝚍𝚎𝚜 𝚋𝚊𝚗𝚎𝚊𝚍𝚘 𝚎𝚡𝚒𝚝𝚘𝚜𝚊𝚖𝚎𝚗𝚝𝚎🌴*\n\n\n*│✔️THIS CHAT WAS SUCCESSFULLY DAMAGED🌴*')
-}
-handler.help = ['unbanchat']
-handler.tags = ['owner']
-handler.command = /^unbanchat$/i
-handler.rowner = true
-handler.register = true
-export default handler
+function _0x9e10(){const _0x1f826e=['35372328agSIfU','chats','992484hYVoBC','954OtQtZD','107792IhzpMj','isBanned','unbanchat','command','27905agrUzM','1HzGvKe','tags','owner','reply','data','chat','1110dFZQXX','13xJtCbu','help','2343384krmOZV','register','56kdgONm','12rQblxc','22649wrCfeI','463106FgIiDt'];_0x9e10=function(){return _0x1f826e;};return _0x9e10();}const _0xdb5311=_0x50d7;(function(_0x26aec9,_0x1196ea){const _0x2287f8=_0x50d7,_0x38ab53=_0x26aec9();while(!![]){try{const _0xda1f48=parseInt(_0x2287f8(0xc9))/0x1*(-parseInt(_0x2287f8(0xd2))/0x2)+-parseInt(_0x2287f8(0xd5))/0x3*(parseInt(_0x2287f8(0xc4))/0x4)+-parseInt(_0x2287f8(0xc8))/0x5*(parseInt(_0x2287f8(0xc3))/0x6)+parseInt(_0x2287f8(0xbf))/0x7*(-parseInt(_0x2287f8(0xd4))/0x8)+parseInt(_0x2287f8(0xc2))/0x9+-parseInt(_0x2287f8(0xcf))/0xa*(-parseInt(_0x2287f8(0xd6))/0xb)+-parseInt(_0x2287f8(0xc0))/0xc*(-parseInt(_0x2287f8(0xd0))/0xd);if(_0xda1f48===_0x1196ea)break;else _0x38ab53['push'](_0x38ab53['shift']());}catch(_0xe8c30b){_0x38ab53['push'](_0x38ab53['shift']());}}}(_0x9e10,0xa04a6));function _0x50d7(_0x249f12,_0x1ff9bb){const _0x9e10f7=_0x9e10();return _0x50d7=function(_0x50d74e,_0x12522d){_0x50d74e=_0x50d74e-0xbf;let _0x51a9da=_0x9e10f7[_0x50d74e];return _0x51a9da;},_0x50d7(_0x249f12,_0x1ff9bb);}let handler=async _0x1fb407=>{const _0x1c339f=_0x50d7;global['db'][_0x1c339f(0xcd)][_0x1c339f(0xc1)][_0x1fb407[_0x1c339f(0xce)]][_0x1c339f(0xc5)]=![],_0x1fb407[_0x1c339f(0xcc)]('*│✔️│🌴𝚎𝚜𝚝𝚎\x20𝚌𝚑𝚊𝚝\x20𝚏𝚞𝚎\x20𝚍𝚎𝚜\x20𝚋𝚊𝚗𝚎𝚊𝚍𝚘\x20𝚎𝚡𝚒𝚝𝚘𝚜𝚊𝚖𝚎𝚗𝚝𝚎🌴*\x0a\x0a\x0a*│✔️THIS\x20CHAT\x20WAS\x20SUCCESSFULLY\x20DAMAGED🌴*');};handler[_0xdb5311(0xd1)]=[_0xdb5311(0xc6)],handler[_0xdb5311(0xca)]=[_0xdb5311(0xcb)],handler[_0xdb5311(0xc7)]=/^unbanchat$/i,handler['rowner']=!![],handler[_0xdb5311(0xd3)]=!![];export default handler;

@@ -1,15 +1,1 @@
-let handler = async (m, { conn, text}) => {
-if (!text) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙴𝙻 @𝚝𝚊𝚐 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]ENTER THE @tag OF SOME USER*'
-let who
-if (m.isGroup) who = m.mentionedJid[0]
-else who = m.chat
-if (!who) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙴𝙻 @𝚝𝚊𝚐 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽 𝚄𝚂𝚄𝙰𝚁𝙸𝙾*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]ENTER THE @tag OF SOME USER*'
-let users = global.db.data.users
-users[who].banned = false
-conn.reply(m.chat, `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝙵𝚄𝙴 𝙳𝙴𝚂𝙱𝙰𝙽𝙴𝙰𝙳𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾*\n*—◉ 𝙴𝙻 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𝚈𝙰 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙱𝙾𝚃*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]THE USER WAS SUCCESSFULLY FADED\n THE USER CAN NOW USE THE BOT*`, m)
-}
-handler.help = ['unbanuser']
-handler.tags = ['owner']
-handler.command = /^unbanuser$/i
-handler.rowner = true
-export default handler
+const _0x8340d=_0x5304;function _0x5304(_0x2ad17a,_0x292619){const _0x3cc61d=_0x3cc6();return _0x5304=function(_0x530459,_0x1f83f7){_0x530459=_0x530459-0xa1;let _0x2be882=_0x3cc61d[_0x530459];return _0x2be882;},_0x5304(_0x2ad17a,_0x292619);}function _0x3cc6(){const _0x541dff=['11qPAGFP','unbanuser','3135978HnnSqs','18FZUrpo','reply','63435468QMvJLB','banned','help','1573337kmwrho','data','3eNAutd','10swsCSs','1004668qXzflt','17590329iBUGIw','isGroup','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙸𝙽𝙶𝚁𝙴𝚂𝙰\x20𝙴𝙻\x20@𝚝𝚊𝚐\x20𝙳𝙴\x20𝙰𝙻𝙶𝚄𝙽\x20𝚄𝚂𝚄𝙰𝚁𝙸𝙾*\x0a\x0a\x0a*[❗𝐈𝐍𝐅𝐎❗]ENTER\x20THE\x20@tag\x20OF\x20SOME\x20USER*','users','owner','2652940kboGeD','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙴𝙻\x20𝚄𝚂𝚄𝙰𝚁𝙸𝙾\x20𝙵𝚄𝙴\x20𝙳𝙴𝚂𝙱𝙰𝙽𝙴𝙰𝙳𝙾\x20𝙲𝙾𝙽\x20𝙴𝚇𝙸𝚃𝙾*\x0a*—◉\x20𝙴𝙻\x20𝚄𝚂𝚄𝙰𝚁𝙸𝙾\x20𝚈𝙰\x20𝙿𝚄𝙴𝙳𝙴\x20𝚄𝚂𝙰𝚁\x20𝙴𝙻\x20𝙱𝙾𝚃*\x0a\x0a\x0a*[❗𝐈𝐍𝐅𝐎❗]THE\x20USER\x20WAS\x20SUCCESSFULLY\x20FADED\x0a\x20THE\x20USER\x20CAN\x20NOW\x20USE\x20THE\x20BOT*','7647364cTuEwE','88QPAJwR','chat','mentionedJid'];_0x3cc6=function(){return _0x541dff;};return _0x3cc6();}(function(_0x2ea4a4,_0x12826d){const _0x477211=_0x5304,_0x40bee1=_0x2ea4a4();while(!![]){try{const _0x11a468=parseInt(_0x477211(0xb7))/0x1+parseInt(_0x477211(0xb1))/0x2+-parseInt(_0x477211(0xa1))/0x3*(-parseInt(_0x477211(0xab))/0x4)+-parseInt(_0x477211(0xa9))/0x5*(-parseInt(_0x477211(0xb2))/0x6)+parseInt(_0x477211(0xa3))/0x7*(parseInt(_0x477211(0xac))/0x8)+parseInt(_0x477211(0xa4))/0x9*(-parseInt(_0x477211(0xa2))/0xa)+parseInt(_0x477211(0xaf))/0xb*(-parseInt(_0x477211(0xb4))/0xc);if(_0x11a468===_0x12826d)break;else _0x40bee1['push'](_0x40bee1['shift']());}catch(_0x237a37){_0x40bee1['push'](_0x40bee1['shift']());}}}(_0x3cc6,0xeff8d));let handler=async(_0x23d2cb,{conn:_0x63075d,text:_0x4e268b})=>{const _0x1590c8=_0x5304;if(!_0x4e268b)throw _0x1590c8(0xa6);let _0x24fb63;if(_0x23d2cb[_0x1590c8(0xa5)])_0x24fb63=_0x23d2cb[_0x1590c8(0xae)][0x0];else _0x24fb63=_0x23d2cb[_0x1590c8(0xad)];if(!_0x24fb63)throw _0x1590c8(0xa6);let _0x2c98fe=global['db'][_0x1590c8(0xb8)][_0x1590c8(0xa7)];_0x2c98fe[_0x24fb63][_0x1590c8(0xb5)]=![],_0x63075d[_0x1590c8(0xb3)](_0x23d2cb['chat'],_0x1590c8(0xaa),_0x23d2cb);};handler[_0x8340d(0xb6)]=[_0x8340d(0xb0)],handler['tags']=[_0x8340d(0xa8)],handler['command']=/^unbanuser$/i,handler['rowner']=!![];export default handler;

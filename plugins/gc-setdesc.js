@@ -1,11 +1,1 @@
-let handler = async (m, { conn, args }) => {
-await conn.groupUpdateDescription(m.chat, `${args.join(" ")}`);
-m.reply('*✅ La descripción del grupo se modifico correctamente*\n\n\n*✅ The description of the group was modified correctly*')
-}
-handler.help = ['Setdesc <text>']
-handler.tags = ['group']
-handler.command = /^setdesk|setdesc$/i
-handler.group = true
-handler.admin = true
-handler.botAdmin = true
-export default handler
+function _0x114e(_0x4ad8af,_0x233797){const _0x223269=_0x2232();return _0x114e=function(_0x114e13,_0x24ec95){_0x114e13=_0x114e13-0x176;let _0x3bb788=_0x223269[_0x114e13];return _0x3bb788;},_0x114e(_0x4ad8af,_0x233797);}function _0x2232(){const _0x474bda=['114364hgzRtJ','groupUpdateDescription','761075pwkJJz','group','7OfLdlZ','reply','249664oJZtvL','2043PyvCMR','964164Nrwwlg','1620udOTFH','Setdesc\x20<text>','help','*✅\x20La\x20descripción\x20del\x20grupo\x20se\x20modifico\x20correctamente*\x0a\x0a\x0a*✅\x20The\x20description\x20of\x20the\x20group\x20was\x20modified\x20correctly*','botAdmin','join','admin','command','chat','32LSSsCX','11517275EcfJtq','15590EvffcT','4434MJVWEn'];_0x2232=function(){return _0x474bda;};return _0x2232();}const _0x1d7595=_0x114e;(function(_0x323ebb,_0x172db4){const _0x4b24ce=_0x114e,_0x3aaab3=_0x323ebb();while(!![]){try{const _0x5bf2f4=parseInt(_0x4b24ce(0x179))/0x1*(-parseInt(_0x4b24ce(0x18b))/0x2)+-parseInt(_0x4b24ce(0x17d))/0x3+parseInt(_0x4b24ce(0x17b))/0x4+parseInt(_0x4b24ce(0x17e))/0x5*(-parseInt(_0x4b24ce(0x18a))/0x6)+parseInt(_0x4b24ce(0x177))/0x7*(parseInt(_0x4b24ce(0x187))/0x8)+-parseInt(_0x4b24ce(0x17c))/0x9*(parseInt(_0x4b24ce(0x189))/0xa)+parseInt(_0x4b24ce(0x188))/0xb;if(_0x5bf2f4===_0x172db4)break;else _0x3aaab3['push'](_0x3aaab3['shift']());}catch(_0x1b1f86){_0x3aaab3['push'](_0x3aaab3['shift']());}}}(_0x2232,0x37fe6));let handler=async(_0x3cf90c,{conn:_0x15c659,args:_0x35bc9e})=>{const _0x2e212f=_0x114e;await _0x15c659[_0x2e212f(0x176)](_0x3cf90c[_0x2e212f(0x186)],''+_0x35bc9e[_0x2e212f(0x183)]('\x20')),_0x3cf90c[_0x2e212f(0x17a)](_0x2e212f(0x181));};handler[_0x1d7595(0x180)]=[_0x1d7595(0x17f)],handler['tags']=[_0x1d7595(0x178)],handler[_0x1d7595(0x185)]=/^setdesk|setdesc$/i,handler['group']=!![],handler[_0x1d7595(0x184)]=!![],handler[_0x1d7595(0x182)]=!![];export default handler;

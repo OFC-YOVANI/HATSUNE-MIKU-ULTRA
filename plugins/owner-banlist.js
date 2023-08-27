@@ -1,18 +1,1 @@
-let handler = async (m, { conn, isOwner }) => {
-let chats = Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned)
-let users = Object.entries(global.db.data.users).filter(user => user[1].banned)
-let caption = `
-┌〔 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒 〕
-├ Total : ${users.length} ${users ? '\n' + users.map(([jid], i) => `
-├ ${isOwner ? '@' + jid.split`@`[0] : jid}`.trim()).join('\n') : '├'}
-└────
-
-┌〔 𝐂𝐇𝐀𝐓𝐒 𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒 〕
-├ Total : ${chats.length} ${chats ? '\n' + chats.map(([jid], i) => `
-├ ${isOwner ? '@' + jid.split`@`[0] : jid}`.trim()).join('\n') : '├'}
-└────
-`.trim()
-m.reply(caption, null, {mentions: conn.parseMention(caption)})}
-handler.command = /^banlist(ned)?|ban(ned)?list|daftarban(ned)?$/i
-handler.rowner = true
-export default handler
+function _0x1151(_0x506dd9,_0xd87818){const _0x37ecc5=_0x37ec();return _0x1151=function(_0x11519d,_0x450455){_0x11519d=_0x11519d-0x14e;let _0x205e15=_0x37ecc5[_0x11519d];return _0x205e15;},_0x1151(_0x506dd9,_0xd87818);}const _0x4f502c=_0x1151;(function(_0x170ec1,_0x483b1f){const _0x4f0927=_0x1151,_0xc1a340=_0x170ec1();while(!![]){try{const _0x4baa8c=-parseInt(_0x4f0927(0x166))/0x1+-parseInt(_0x4f0927(0x153))/0x2*(parseInt(_0x4f0927(0x158))/0x3)+-parseInt(_0x4f0927(0x165))/0x4+parseInt(_0x4f0927(0x162))/0x5+-parseInt(_0x4f0927(0x15c))/0x6+parseInt(_0x4f0927(0x14f))/0x7+parseInt(_0x4f0927(0x150))/0x8;if(_0x4baa8c===_0x483b1f)break;else _0xc1a340['push'](_0xc1a340['shift']());}catch(_0x21d19d){_0xc1a340['push'](_0xc1a340['shift']());}}}(_0x37ec,0xea520));let handler=async(_0x4937b8,{conn:_0x169913,isOwner:_0x46c630})=>{const _0x147336=_0x1151;let _0x4076f4=Object[_0x147336(0x160)](global['db']['data']['chats'])[_0x147336(0x14e)](_0x4b9019=>_0x4b9019[0x1][_0x147336(0x15b)]),_0x2d2e0f=Object[_0x147336(0x160)](global['db']['data'][_0x147336(0x15d)])['filter'](_0x3df092=>_0x3df092[0x1][_0x147336(0x161)]),_0x120aa4=(_0x147336(0x164)+_0x2d2e0f[_0x147336(0x15e)]+'\x20'+(_0x2d2e0f?'\x0a'+_0x2d2e0f['map'](([_0x5aa171],_0xd5279d)=>(_0x147336(0x15a)+(_0x46c630?'@'+_0x5aa171[_0x147336(0x157)]`@`[0x0]:_0x5aa171))['trim']())[_0x147336(0x159)]('\x0a'):'├')+_0x147336(0x151)+_0x4076f4[_0x147336(0x15e)]+'\x20'+(_0x4076f4?'\x0a'+_0x4076f4[_0x147336(0x156)](([_0x1250a7],_0x10a52d)=>(_0x147336(0x15a)+(_0x46c630?'@'+_0x1250a7[_0x147336(0x157)]`@`[0x0]:_0x1250a7))[_0x147336(0x152)]())[_0x147336(0x159)]('\x0a'):'├')+'\x0a└────\x0a')[_0x147336(0x152)]();_0x4937b8[_0x147336(0x163)](_0x120aa4,null,{'mentions':_0x169913[_0x147336(0x155)](_0x120aa4)});};handler[_0x4f502c(0x15f)]=/^banlist(ned)?|ban(ned)?list|daftarban(ned)?$/i,handler[_0x4f502c(0x154)]=!![];export default handler;function _0x37ec(){const _0x4d9673=['length','command','entries','banned','3448920xVwyoI','reply','\x0a┌〔\x20𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒\x20𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒\x20〕\x0a├\x20Total\x20:\x20','1440508zBPJjE','1244710ATmQQO','filter','7005439qXJjkc','26124312SgbBCh','\x0a└────\x0a\x0a┌〔\x20𝐂𝐇𝐀𝐓𝐒\x20𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒\x20〕\x0a├\x20Total\x20:\x20','trim','34dURcCh','rowner','parseMention','map','split','261066PXmguZ','join','\x0a├\x20','isBanned','5472678NzenCL','users'];_0x37ec=function(){return _0x4d9673;};return _0x37ec();}

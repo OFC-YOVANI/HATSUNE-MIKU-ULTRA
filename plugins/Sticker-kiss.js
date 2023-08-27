@@ -1,15 +1,1 @@
-import { sticker } from '../lib/sticker.js'
-import fetch from 'node-fetch'
-import MessageType from '@adiwajshing/baileys'
-let handler = async (m, { conn}) => {
-try {   
-if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
-if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
-let res = await fetch('https://nekos.life/api/kiss')
-let json = await res.json()
-let { url } = json
-let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio besos a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
-} catch (e) { }}
-handler.command = /^(kiss|skiss|kis|besos|beso)$/i
-export default handler
+(function(_0xdc3825,_0x4fa57c){const _0x18b9e0=_0x3fe4,_0x460198=_0xdc3825();while(!![]){try{const _0x1c0161=-parseInt(_0x18b9e0(0x145))/0x1+-parseInt(_0x18b9e0(0x13d))/0x2+-parseInt(_0x18b9e0(0x147))/0x3+parseInt(_0x18b9e0(0x142))/0x4*(parseInt(_0x18b9e0(0x13f))/0x5)+parseInt(_0x18b9e0(0x141))/0x6*(parseInt(_0x18b9e0(0x138))/0x7)+-parseInt(_0x18b9e0(0x140))/0x8*(parseInt(_0x18b9e0(0x137))/0x9)+parseInt(_0x18b9e0(0x143))/0xa*(parseInt(_0x18b9e0(0x13a))/0xb);if(_0x1c0161===_0x4fa57c)break;else _0x460198['push'](_0x460198['shift']());}catch(_0x484ad5){_0x460198['push'](_0x460198['shift']());}}}(_0x24dc,0xb18ce));import{sticker}from'../lib/sticker.js';import _0x554777 from'node-fetch';import _0x121ac6 from'@adiwajshing/baileys';function _0x24dc(){const _0x50e4c8=['6430aNYplo','sendFile','1525RFSyao','8Bskapi','15786TGIkcT','3152CxWkqF','1190tQXVaB','map','446921IclyiM','\x20le\x20dio\x20besos\x20a\x20','2826798RAwCyH','length','join','push','sender','split','4528404rmUDlP','1519RAepqj','chat','167453zrPPBO','mentionedJid','alguien\x20'];_0x24dc=function(){return _0x50e4c8;};return _0x24dc();}function _0x3fe4(_0x20514c,_0x2df8f8){const _0x24dc00=_0x24dc();return _0x3fe4=function(_0x3fe415,_0x29933b){_0x3fe415=_0x3fe415-0x132;let _0x4c14bb=_0x24dc00[_0x3fe415];return _0x4c14bb;},_0x3fe4(_0x20514c,_0x2df8f8);}let handler=async(_0x1646d4,{conn:_0x491d66})=>{const _0x57a939=_0x3fe4;try{if(_0x1646d4['quoted']?.[_0x57a939(0x135)])_0x1646d4[_0x57a939(0x13b)][_0x57a939(0x134)](_0x1646d4['quoted'][_0x57a939(0x135)]);if(!_0x1646d4[_0x57a939(0x13b)][_0x57a939(0x132)])_0x1646d4[_0x57a939(0x13b)]['push'](_0x1646d4['sender']);let _0x129c83=await _0x554777('https://nekos.life/api/kiss'),_0x410436=await _0x129c83['json'](),{url:_0x1fe421}=_0x410436,_0x12ff62=await sticker(null,_0x1fe421,'+'+_0x1646d4[_0x57a939(0x135)][_0x57a939(0x136)]('@')[0x0]+_0x57a939(0x146)+_0x1646d4[_0x57a939(0x13b)][_0x57a939(0x144)](_0x478aad=>_0x478aad===_0x1646d4[_0x57a939(0x135)]?_0x57a939(0x13c):'+'+_0x478aad[_0x57a939(0x136)]('@')[0x0])[_0x57a939(0x133)](',\x20'));_0x491d66[_0x57a939(0x13e)](_0x1646d4[_0x57a939(0x139)],_0x12ff62,null,{'asSticker':!![]});}catch(_0xe1be07){}};handler['command']=/^(kiss|skiss|kis|besos|beso)$/i;export default handler;

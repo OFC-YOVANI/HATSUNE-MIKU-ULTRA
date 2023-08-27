@@ -1,17 +1,1 @@
-import uploadImage from '../lib/uploadImage.js'
-import { sticker } from '../lib/sticker.js'
-let handler = async (m, { conn, text }) => {
-try {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-let img = await q.download()
-let url = await uploadImage(img)
-let scircle = global.API('dzx', '/api/canvas/circle', { url }) 
-let stiker = await sticker(null, scircle, global.packname, global.author)
-conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })
-} catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾 𝚂𝙸𝙴𝙽𝚃𝙾, 𝙾𝙲𝚄𝚁𝚁𝙸𝙾 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁, 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾, 𝙽𝙾 𝙾𝙻𝚅𝙸𝙳𝙴 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁 𝙰 𝚄𝙽𝙰 𝙸𝙼𝙰𝙶𝙴𝙽 𝙻𝙰 𝙲𝚄𝙰𝙻 𝚂𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝚁𝙰 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙲𝙸𝚁𝙲𝚄𝙻𝙰𝚁*')
-}}
-handler.command = /^scircle|circle$/i
-export default handler
-/* `https://api.dhamzxploit.my.id/api/canvas/circle?url=${url}` */
+const _0x363135=_0x1037;(function(_0x36faca,_0x1c9d9b){const _0x195b16=_0x1037,_0x203661=_0x36faca();while(!![]){try{const _0x360863=parseInt(_0x195b16(0x19c))/0x1*(parseInt(_0x195b16(0x194))/0x2)+parseInt(_0x195b16(0x1a1))/0x3*(-parseInt(_0x195b16(0x199))/0x4)+-parseInt(_0x195b16(0x1a7))/0x5*(parseInt(_0x195b16(0x1a3))/0x6)+parseInt(_0x195b16(0x192))/0x7+-parseInt(_0x195b16(0x19f))/0x8*(parseInt(_0x195b16(0x1a2))/0x9)+parseInt(_0x195b16(0x1a0))/0xa*(-parseInt(_0x195b16(0x19b))/0xb)+parseInt(_0x195b16(0x19d))/0xc;if(_0x360863===_0x1c9d9b)break;else _0x203661['push'](_0x203661['shift']());}catch(_0x4ad7ac){_0x203661['push'](_0x203661['shift']());}}}(_0x5a9b,0xa3f1e));import _0x34d8e9 from'../lib/uploadImage.js';function _0x5a9b(){const _0xbaba7=['770sQuKLD','1zHcbMX','1500696XquEEU','author','24NFieII','38650GFoDHD','3BXxIES','1794753trGnQT','18678XkPhbN','dzx','/api/canvas/circle','command','205elBtOd','sticker.webp','msg','7404544UklOoh','quoted','2627798dXrkiW','download','mimetype','API','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙻𝙾\x20𝚂𝙸𝙴𝙽𝚃𝙾,\x20𝙾𝙲𝚄𝚁𝚁𝙸𝙾\x20𝚄𝙽\x20𝙴𝚁𝚁𝙾𝚁,\x20𝚅𝚄𝙴𝙻𝚅𝙰\x20𝙰\x20𝙸𝙽𝚃𝙴𝚁𝙽𝚃𝙰𝚁𝙻𝙾,\x20𝙽𝙾\x20𝙾𝙻𝚅𝙸𝙳𝙴\x20𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁\x20𝙰\x20𝚄𝙽𝙰\x20𝙸𝙼𝙰𝙶𝙴𝙽\x20𝙻𝙰\x20𝙲𝚄𝙰𝙻\x20𝚂𝙴\x20𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝚁𝙰\x20𝙴𝙽\x20𝚂𝚃𝙸𝙲𝙺𝙴𝚁\x20𝙲𝙸𝚁𝙲𝚄𝙻𝙰𝚁*','3315188oCPWFB','packname'];_0x5a9b=function(){return _0xbaba7;};return _0x5a9b();}import{sticker}from'../lib/sticker.js';function _0x1037(_0x4e4a21,_0x668e84){const _0x5a9bb9=_0x5a9b();return _0x1037=function(_0x1037ea,_0x2ef075){_0x1037ea=_0x1037ea-0x190;let _0x2db396=_0x5a9bb9[_0x1037ea];return _0x2db396;},_0x1037(_0x4e4a21,_0x668e84);}let handler=async(_0x2d375a,{conn:_0x2bf8e4,text:_0x3ed2a4})=>{const _0x584f50=_0x1037;try{let _0x4dcb16=_0x2d375a[_0x584f50(0x193)]?_0x2d375a[_0x584f50(0x193)]:_0x2d375a,_0x321c51=(_0x4dcb16[_0x584f50(0x191)]||_0x4dcb16)[_0x584f50(0x196)]||'',_0x5a5492=await _0x4dcb16[_0x584f50(0x195)](),_0x29fd30=await _0x34d8e9(_0x5a5492),_0x3c31e6=global[_0x584f50(0x197)](_0x584f50(0x1a4),_0x584f50(0x1a5),{'url':_0x29fd30}),_0x552142=await sticker(null,_0x3c31e6,global[_0x584f50(0x19a)],global[_0x584f50(0x19e)]);_0x2bf8e4['sendFile'](_0x2d375a['chat'],_0x552142,_0x584f50(0x190),'',_0x2d375a,{'asSticker':!![]});}catch(_0x1954e0){_0x2d375a['reply'](_0x584f50(0x198));}};handler[_0x363135(0x1a6)]=/^scircle|circle$/i;export default handler;

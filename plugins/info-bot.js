@@ -1,13 +1,1 @@
-import fs from "fs"
-let handler = m => m
-handler.all = async function (m) {
-let vn = './Audios/bot.mp3'
-let chat = global.db.data.chats[m.chat]
-if (/^bot$/i.test(m.text) && !chat.isBanned) { 
-conn.sendPresenceUpdate('recording', m.chat)   
-await m.reply(`*𝙷𝙾𝙻𝙰, ¿𝙲𝙾𝙼𝙾 𝚃𝙴 𝙿𝚄𝙴𝙳𝙾 𝙰𝚈𝚄𝙳𝙰𝚁?*\n\n *HELLO, ¿HOW CAN I HELP YOU?* `)
-conn.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', seconds: '4556', ptt: true }, { quoted: m })
-}
-return !0
-}
-export default handler
+const _0x5e4135=_0x260c;(function(_0x2bedc8,_0x1a2c17){const _0xe3f54f=_0x260c,_0x1d6786=_0x2bedc8();while(!![]){try{const _0x284b39=parseInt(_0xe3f54f(0x1b6))/0x1*(parseInt(_0xe3f54f(0x1c5))/0x2)+parseInt(_0xe3f54f(0x1c2))/0x3*(parseInt(_0xe3f54f(0x1b7))/0x4)+parseInt(_0xe3f54f(0x1af))/0x5+parseInt(_0xe3f54f(0x1b4))/0x6*(parseInt(_0xe3f54f(0x1c8))/0x7)+parseInt(_0xe3f54f(0x1bd))/0x8*(parseInt(_0xe3f54f(0x1bb))/0x9)+-parseInt(_0xe3f54f(0x1b8))/0xa+-parseInt(_0xe3f54f(0x1be))/0xb*(parseInt(_0xe3f54f(0x1bc))/0xc);if(_0x284b39===_0x1a2c17)break;else _0x1d6786['push'](_0x1d6786['shift']());}catch(_0x4f541b){_0x1d6786['push'](_0x1d6786['shift']());}}}(_0x123a,0xa358f));import _0x22c4bb from'fs';let handler=_0x7eef25=>_0x7eef25;function _0x260c(_0x61a4be,_0x1d0e9b){const _0x123a7b=_0x123a();return _0x260c=function(_0x260c8c,_0x247230){_0x260c8c=_0x260c8c-0x1af;let _0x3f669f=_0x123a7b[_0x260c8c];return _0x3f669f;},_0x260c(_0x61a4be,_0x1d0e9b);}handler[_0x5e4135(0x1c4)]=async function(_0x530f5c){const _0x586b0a=_0x5e4135;let _0x391212=_0x586b0a(0x1c6),_0xd70170=global['db'][_0x586b0a(0x1c1)][_0x586b0a(0x1b1)][_0x530f5c[_0x586b0a(0x1c7)]];return/^bot$/i['test'](_0x530f5c[_0x586b0a(0x1b3)])&&!_0xd70170[_0x586b0a(0x1b0)]&&(conn[_0x586b0a(0x1c3)](_0x586b0a(0x1b5),_0x530f5c[_0x586b0a(0x1c7)]),await _0x530f5c[_0x586b0a(0x1bf)](_0x586b0a(0x1ba)),conn[_0x586b0a(0x1b2)](_0x530f5c[_0x586b0a(0x1c7)],{'audio':{'url':_0x391212},'fileName':'error.mp3','mimetype':_0x586b0a(0x1c0),'seconds':_0x586b0a(0x1b9),'ptt':!![]},{'quoted':_0x530f5c})),!0x0;};function _0x123a(){const _0x3d4972=['912136vPTpgX','662992frwOrW','reply','audio/mp4','data','109899nFeskV','sendPresenceUpdate','all','358LuLbtn','./lib/img/Hola.mp3','chat','112483rgmZSI','5580725jmWWRZ','isBanned','chats','sendMessage','text','132LsyKPP','recording','485TiHuOQ','44IaCTmJ','12235710eXgSDq','4556','*𝙷𝙾𝙻𝙰,\x20¿𝙲𝙾𝙼𝙾\x20𝚃𝙴\x20𝙿𝚄𝙴𝙳𝙾\x20𝙰𝚈𝚄𝙳𝙰𝚁?*\x0a\x0a\x20*HELLO,\x20¿HOW\x20CAN\x20I\x20HELP\x20YOU?*\x20','9QmIhgb','36AGGFzR'];_0x123a=function(){return _0x3d4972;};return _0x123a();}export default handler;

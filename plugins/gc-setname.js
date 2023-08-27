@@ -1,17 +1,1 @@
-import Presence from '@adiwajshing/baileys'
-let handler  = async (m, { conn, args, text }) => {
-if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝚀𝚄𝙴 𝚂𝙴𝙰 𝙴𝙻 𝙽𝚄𝙴𝚅𝙾 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]ENTER THE NAME THAT IS THE NEW NAME OF THE GROUP*`
-try {
-let text = args.join` `
-if(!args || !args[0]) {
-} else {
-conn.groupUpdateSubject(m.chat, text)}
-} catch (e) {
-throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙻𝙾 𝚂𝙸𝙴𝙽𝚃𝙾 𝙷𝚄𝙱𝙾 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁, 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙽𝙾 𝙿𝚄𝙴𝙳𝙴 𝚂𝙴𝚁 𝙼𝙰𝚂 𝙳𝙴 𝟸𝟻 𝙲𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝙴𝚂*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]SORRY THERE WAS AN ERROR THE NAME CANNOT BE MORE THAN 25 CHARACTERISTICS*'
-}}
-handler.help = ['setname <text>']
-handler.tags = ['group']
-handler.command = /^(setname)$/i
-handler.group = true
-handler.admin = true
-export default handler
+function _0x5311(_0x2beb15,_0x2efafd){const _0x10f7c3=_0x10f7();return _0x5311=function(_0x531153,_0x3b54bf){_0x531153=_0x531153-0x1e7;let _0x2eb52e=_0x10f7c3[_0x531153];return _0x2eb52e;},_0x5311(_0x2beb15,_0x2efafd);}const _0x2bf976=_0x5311;(function(_0x496668,_0x145551){const _0xb58943=_0x5311,_0x37e5f9=_0x496668();while(!![]){try{const _0x1a8898=parseInt(_0xb58943(0x1e7))/0x1+-parseInt(_0xb58943(0x1f4))/0x2*(parseInt(_0xb58943(0x1e9))/0x3)+parseInt(_0xb58943(0x1ee))/0x4*(parseInt(_0xb58943(0x1ed))/0x5)+-parseInt(_0xb58943(0x1ea))/0x6*(-parseInt(_0xb58943(0x1f0))/0x7)+-parseInt(_0xb58943(0x1f1))/0x8+-parseInt(_0xb58943(0x1f5))/0x9+-parseInt(_0xb58943(0x1ef))/0xa*(-parseInt(_0xb58943(0x1ec))/0xb);if(_0x1a8898===_0x145551)break;else _0x37e5f9['push'](_0x37e5f9['shift']());}catch(_0xb0480c){_0x37e5f9['push'](_0x37e5f9['shift']());}}}(_0x10f7,0xd6508));function _0x10f7(){const _0x4e11ae=['1410198VQQrsv','6734313PHRBXR','groupUpdateSubject','822838FPBqtZ','join','6cuMeYR','2279226GMHlUn','command','27775924zWmkKU','72020iXbMHx','56VssfJV','10gRQnyK','7WljeqO','7145296AzjchN','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙸𝙽𝙶𝚁𝙴𝚂𝙴\x20𝙴𝙻\x20𝙽𝙾𝙼𝙱𝚁𝙴\x20𝚀𝚄𝙴\x20𝙳𝙴𝚂𝙴𝙰\x20𝚀𝚄𝙴\x20𝚂𝙴𝙰\x20𝙴𝙻\x20𝙽𝚄𝙴𝚅𝙾\x20𝙽𝙾𝙼𝙱𝚁𝙴\x20𝙳𝙴𝙻\x20𝙶𝚁𝚄𝙿𝙾*\x0a\x0a\x0a*[❗𝐈𝐍𝐅𝐎❗]ENTER\x20THE\x20NAME\x20THAT\x20IS\x20THE\x20NEW\x20NAME\x20OF\x20THE\x20GROUP*','help'];_0x10f7=function(){return _0x4e11ae;};return _0x10f7();}import _0x2d44aa from'@adiwajshing/baileys';let handler=async(_0x5e3e31,{conn:_0x9a2e05,args:_0x10f23b,text:_0x1fd685})=>{const _0x79aae=_0x5311;if(!_0x1fd685)throw _0x79aae(0x1f2);try{let _0x5e33cc=_0x10f23b[_0x79aae(0x1e8)]` `;if(!_0x10f23b||!_0x10f23b[0x0]){}else _0x9a2e05[_0x79aae(0x1f6)](_0x5e3e31['chat'],_0x5e33cc);}catch(_0x5d6399){throw'*[❗𝐈𝐍𝐅𝐎❗]\x20𝙻𝙾\x20𝚂𝙸𝙴𝙽𝚃𝙾\x20𝙷𝚄𝙱𝙾\x20𝚄𝙽\x20𝙴𝚁𝚁𝙾𝚁,\x20𝙴𝙻\x20𝙽𝙾𝙼𝙱𝚁𝙴\x20𝙽𝙾\x20𝙿𝚄𝙴𝙳𝙴\x20𝚂𝙴𝚁\x20𝙼𝙰𝚂\x20𝙳𝙴\x20𝟸𝟻\x20𝙲𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝙴𝚂*\x0a\x0a\x0a*[❗𝐈𝐍𝐅𝐎❗]SORRY\x20THERE\x20WAS\x20AN\x20ERROR\x20THE\x20NAME\x20CANNOT\x20BE\x20MORE\x20THAN\x2025\x20CHARACTERISTICS*';}};handler[_0x2bf976(0x1f3)]=['setname\x20<text>'],handler['tags']=['group'],handler[_0x2bf976(0x1eb)]=/^(setname)$/i,handler['group']=!![],handler['admin']=!![];export default handler;

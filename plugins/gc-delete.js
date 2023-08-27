@@ -1,16 +1,1 @@
-let handler = async (m, { conn, usedPrefix, command }) => {	
-if (!m.quoted) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰𝙻 𝙼𝙴𝙽𝚂𝙰𝙹𝙴 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝚀𝚄𝙴 𝚂𝙴𝙰 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾*\n\n\n*[❗𝐈𝐍𝐅𝐎❗]REPLY TO THE MESSAGE YOU WANT TO BE DELETED*`
-try {
-let delet = m.message.extendedTextMessage.contextInfo.participant
-let bang = m.message.extendedTextMessage.contextInfo.stanzaId
-return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-} catch {
-return conn.sendMessage(m.chat, { delete: m.quoted.vM.key })
-}}
-handler.help = ['del', 'delete']
-handler.tags = ['group']
-handler.command = /^del(ete)?$/i
-handler.group = true
-handler.admin = true
-handler.botAdmin = true
-export default handler
+const _0x39904e=_0x1fd9;function _0x1fd9(_0x196e23,_0x1a2c17){const _0x19064b=_0x1906();return _0x1fd9=function(_0x1fd98a,_0x40bf45){_0x1fd98a=_0x1fd98a-0x8d;let _0x370a7b=_0x19064b[_0x1fd98a];return _0x370a7b;},_0x1fd9(_0x196e23,_0x1a2c17);}(function(_0x3c0029,_0x52602a){const _0x3463df=_0x1fd9,_0xb10c05=_0x3c0029();while(!![]){try{const _0x182f7f=-parseInt(_0x3463df(0x9b))/0x1*(-parseInt(_0x3463df(0x93))/0x2)+parseInt(_0x3463df(0x8f))/0x3+parseInt(_0x3463df(0xa0))/0x4+parseInt(_0x3463df(0x9e))/0x5+-parseInt(_0x3463df(0xa5))/0x6*(-parseInt(_0x3463df(0x8d))/0x7)+parseInt(_0x3463df(0x9d))/0x8*(-parseInt(_0x3463df(0xa4))/0x9)+-parseInt(_0x3463df(0x91))/0xa;if(_0x182f7f===_0x52602a)break;else _0xb10c05['push'](_0xb10c05['shift']());}catch(_0x5333f3){_0xb10c05['push'](_0xb10c05['shift']());}}}(_0x1906,0x1c579));let handler=async(_0x5841f9,{conn:_0x27dd1f,usedPrefix:_0x5582de,command:_0x2396f0})=>{const _0x2060a0=_0x1fd9;if(!_0x5841f9['quoted'])throw _0x2060a0(0x9a);try{let _0x43a639=_0x5841f9[_0x2060a0(0x95)]['extendedTextMessage'][_0x2060a0(0x9f)][_0x2060a0(0x96)],_0x37df1a=_0x5841f9[_0x2060a0(0x95)][_0x2060a0(0xa1)][_0x2060a0(0x9f)][_0x2060a0(0x90)];return _0x27dd1f[_0x2060a0(0xa3)](_0x5841f9['chat'],{'delete':{'remoteJid':_0x5841f9[_0x2060a0(0x98)],'fromMe':![],'id':_0x37df1a,'participant':_0x43a639}});}catch{return _0x27dd1f[_0x2060a0(0xa3)](_0x5841f9['chat'],{'delete':_0x5841f9[_0x2060a0(0x9c)]['vM'][_0x2060a0(0x8e)]});}};function _0x1906(){const _0x4361ff=['quoted','417472bZWdOS','92065iNZXim','contextInfo','372580ZRWXrf','extendedTextMessage','help','sendMessage','18abvwMG','1266joDYsJ','1778ZkZxie','key','228777TmLBmX','stanzaId','390410hYnXXZ','delete','12058zQVNOK','del','message','participant','group','chat','botAdmin','*[❗𝐈𝐍𝐅𝐎❗]\x20𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰\x20𝙰𝙻\x20𝙼𝙴𝙽𝚂𝙰𝙹𝙴\x20𝚀𝚄𝙴\x20𝙳𝙴𝚂𝙴𝙰\x20𝚀𝚄𝙴\x20𝚂𝙴𝙰\x20𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾*\x0a\x0a\x0a*[❗𝐈𝐍𝐅𝐎❗]REPLY\x20TO\x20THE\x20MESSAGE\x20YOU\x20WANT\x20TO\x20BE\x20DELETED*','3cbTcEz'];_0x1906=function(){return _0x4361ff;};return _0x1906();}handler[_0x39904e(0xa2)]=[_0x39904e(0x94),_0x39904e(0x92)],handler['tags']=[_0x39904e(0x97)],handler['command']=/^del(ete)?$/i,handler['group']=!![],handler['admin']=!![],handler[_0x39904e(0x99)]=!![];export default handler;

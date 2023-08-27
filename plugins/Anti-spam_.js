@@ -1,18 +1,1 @@
-export async function all(m, conn) {
-let texto
-let user = global.db.data.users[m.sender]  
-if (!m.message)
-return
-if (!user.antispam)
-return !0
-if (+new Date() > user.antispam) {
-let tiempo = 60000 * 1
-setTimeout(() => {
-user.banned = false
-texto = `[❗] @${m.sender.split("@")[0]} ᴇsᴛᴀʙᴀ ʙᴀɴᴇᴀᴅᴏ ᴛᴇᴍᴘᴏʀᴀʟᴍᴇɴᴛᴇ\nᴇsᴘᴇʀᴀ ᴛᴜ ᴅᴇsʙᴀɴᴇᴏ ᴅᴜʀᴀɴᴛᴇ ${tiempo / 1000 - 59} ᴍɪɴᴜᴛᴏs, ʏᴀ ɴᴏ ʜᴀɢᴀs sᴘᴀᴍ ᴘᴀʀᴀ ᴇᴠɪᴛᴀʀ ɴᴜᴇᴠᴀᴍᴇɴᴛᴇ sᴇʀ ʙᴀɴᴇᴀᴅᴏ`
-conn.reply(m.chat, texto, m, { mentions: this.parseMention(texto) })}, 
-tiempo) 
-//this.sendButton(m.chat, texto, wm, null, [['☘️ᴍᴇɴᴜ📌', '/menu']], m, { mentions: this.parseMention(texto) })}, tiempo)       
-user.antispam = null
-}}
- 
+(function(_0x44e187,_0x1b312e){const _0x2948df=_0x4c3c,_0x4c1127=_0x44e187();while(!![]){try{const _0x1d1aa9=parseInt(_0x2948df(0xa6))/0x1+-parseInt(_0x2948df(0xa4))/0x2*(-parseInt(_0x2948df(0xaf))/0x3)+-parseInt(_0x2948df(0xa7))/0x4*(parseInt(_0x2948df(0xae))/0x5)+parseInt(_0x2948df(0xa1))/0x6+parseInt(_0x2948df(0xab))/0x7*(parseInt(_0x2948df(0xa5))/0x8)+-parseInt(_0x2948df(0xa2))/0x9*(parseInt(_0x2948df(0xb1))/0xa)+-parseInt(_0x2948df(0xa0))/0xb*(parseInt(_0x2948df(0xad))/0xc);if(_0x1d1aa9===_0x1b312e)break;else _0x4c1127['push'](_0x4c1127['shift']());}catch(_0x1f5227){_0x4c1127['push'](_0x4c1127['shift']());}}}(_0x2bcb,0x509c6));function _0x4c3c(_0x122f4c,_0x377d28){const _0x2bcb00=_0x2bcb();return _0x4c3c=function(_0x4c3cbf,_0x23f7c8){_0x4c3cbf=_0x4c3cbf-0x9d;let _0x2229e5=_0x2bcb00[_0x4c3cbf];return _0x2229e5;},_0x4c3c(_0x122f4c,_0x377d28);}export async function all(_0x45866b,_0x207159){const _0x4375e1=_0x4c3c;let _0x23a731,_0x5e6ab0=global['db'][_0x4375e1(0xb0)][_0x4375e1(0x9d)][_0x45866b[_0x4375e1(0xac)]];if(!_0x45866b['message'])return;if(!_0x5e6ab0[_0x4375e1(0xa9)])return!0x0;if(+new Date()>_0x5e6ab0[_0x4375e1(0xa9)]){let _0x627228=0xea60*0x1;setTimeout(()=>{const _0x4ca6f8=_0x4375e1;_0x5e6ab0[_0x4ca6f8(0xa3)]=![],_0x23a731=_0x4ca6f8(0xa8)+_0x45866b['sender'][_0x4ca6f8(0x9e)]('@')[0x0]+'\x20ᴇsᴛᴀʙᴀ\x20ʙᴀɴᴇᴀᴅᴏ\x20ᴛᴇᴍᴘᴏʀᴀʟᴍᴇɴᴛᴇ\x0aᴇsᴘᴇʀᴀ\x20ᴛᴜ\x20ᴅᴇsʙᴀɴᴇᴏ\x20ᴅᴜʀᴀɴᴛᴇ\x20'+(_0x627228/0x3e8-0x3b)+'\x20ᴍɪɴᴜᴛᴏs,\x20ʏᴀ\x20ɴᴏ\x20ʜᴀɢᴀs\x20sᴘᴀᴍ\x20ᴘᴀʀᴀ\x20ᴇᴠɪᴛᴀʀ\x20ɴᴜᴇᴠᴀᴍᴇɴᴛᴇ\x20sᴇʀ\x20ʙᴀɴᴇᴀᴅᴏ',_0x207159[_0x4ca6f8(0xaa)](_0x45866b[_0x4ca6f8(0xb2)],_0x23a731,_0x45866b,{'mentions':this[_0x4ca6f8(0x9f)](_0x23a731)});},_0x627228),_0x5e6ab0[_0x4375e1(0xa9)]=null;}}function _0x2bcb(){const _0x4583ee=['398419aHMUvy','1737356qoFbjf','[❗]\x20@','antispam','reply','14FjbpQe','sender','35016MkGhNg','5ykszTQ','63048FkPcMQ','data','316870vmQmzP','chat','users','split','parseMention','1012NCvoqn','148014VYRXZi','63BtBmcJ','banned','30vayGJf','2065832BXTDhO'];_0x2bcb=function(){return _0x4583ee;};return _0x2bcb();}

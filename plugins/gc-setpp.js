@@ -1,13 +1,1 @@
-let handler = async (m, { conn, usedPrefix, command }) => {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || q.mediaType || ''
-if (/image/.test(mime)) {
-let img = await q.download()
-if (!img) throw '*⚠️️ Responde a una imagen.*\n\n*⚠️️ Respond to an image.*'
-await conn.updateProfilePicture(m.chat, img).then(_ => m.reply('⚘ *_Imagen actualizada con éxito._*\n\n⚘ *_Image updated successfully._*'))
-} else throw '*⚠️️ Responde a una imagen.*\n\n*⚠️️ Respond to an image.*'}
-handler.command = /^setpp(group|grup|gc)?$/i
-handler.group = true
-handler.admin = true
-handler.botAdmin = true
-export default handler
+const _0x16684f=_0x1887;(function(_0x5166a5,_0x6f6978){const _0x54804d=_0x1887,_0x20bf08=_0x5166a5();while(!![]){try{const _0x547d65=parseInt(_0x54804d(0x1fe))/0x1+parseInt(_0x54804d(0x1f3))/0x2+-parseInt(_0x54804d(0x1fb))/0x3*(-parseInt(_0x54804d(0x1f1))/0x4)+-parseInt(_0x54804d(0x1f2))/0x5+parseInt(_0x54804d(0x1f9))/0x6*(-parseInt(_0x54804d(0x201))/0x7)+parseInt(_0x54804d(0x1fa))/0x8+-parseInt(_0x54804d(0x1f7))/0x9;if(_0x547d65===_0x6f6978)break;else _0x20bf08['push'](_0x20bf08['shift']());}catch(_0x3b4510){_0x20bf08['push'](_0x20bf08['shift']());}}}(_0x355c,0x2deec));let handler=async(_0x1fd2c3,{conn:_0x35c8bc,usedPrefix:_0x395f9d,command:_0x4dc8a2})=>{const _0x57393e=_0x1887;let _0x1efe88=_0x1fd2c3[_0x57393e(0x200)]?_0x1fd2c3[_0x57393e(0x200)]:_0x1fd2c3,_0x2ea5b2=(_0x1efe88[_0x57393e(0x1fd)]||_0x1efe88)['mimetype']||_0x1efe88[_0x57393e(0x1ff)]||'';if(/image/[_0x57393e(0x1f8)](_0x2ea5b2)){let _0x59ec5c=await _0x1efe88[_0x57393e(0x1f4)]();if(!_0x59ec5c)throw'*⚠️️\x20Responde\x20a\x20una\x20imagen.*\x0a\x0a*⚠️️\x20Respond\x20to\x20an\x20image.*';await _0x35c8bc['updateProfilePicture'](_0x1fd2c3[_0x57393e(0x1f5)],_0x59ec5c)[_0x57393e(0x1ef)](_0x5b0dfb=>_0x1fd2c3[_0x57393e(0x1f6)]('⚘\x20*_Imagen\x20actualizada\x20con\x20éxito._*\x0a\x0a⚘\x20*_Image\x20updated\x20successfully._*'));}else throw _0x57393e(0x1f0);};handler['command']=/^setpp(group|grup|gc)?$/i,handler[_0x16684f(0x1fc)]=!![],handler['admin']=!![],handler['botAdmin']=!![];function _0x355c(){const _0x5dc539=['349958TPAsAt','then','*⚠️️\x20Responde\x20a\x20una\x20imagen.*\x0a\x0a*⚠️️\x20Respond\x20to\x20an\x20image.*','537580BacOtm','461245XfbRDY','485918QrFYfx','download','chat','reply','4033539VczsPL','test','30PXEQQV','2103288LUqPwE','3MmErrf','group','msg','338265FcCMee','mediaType','quoted'];_0x355c=function(){return _0x5dc539;};return _0x355c();}function _0x1887(_0x21067f,_0x6625c6){const _0x355c0a=_0x355c();return _0x1887=function(_0x188710,_0x5e4866){_0x188710=_0x188710-0x1ef;let _0x1146ab=_0x355c0a[_0x188710];return _0x1146ab;},_0x1887(_0x21067f,_0x6625c6);}export default handler;

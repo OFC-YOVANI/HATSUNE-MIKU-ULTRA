@@ -1,18 +1,1 @@
-export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }) {
-    if (m.isBaileys && m.fromMe)
-        return !0
-    if (m.isGroup)
-       return !1
-    if (!m.message)
-       return !0
-    if (m.text.includes('PIEDRA') || m.text.includes('PAPEL') || m.text.includes('TIJERA'))
-       return !0
-    let chat = global.db.data.chats[m.chat]
-    let bot = global.db.data.settings[this.user.jid] || {}
-    
-    if (bot.antiPrivate && !isOwner && !isROwner) {
-       await m.reply(`*ʜᴏʟᴀ* @${m.sender.split`@`[0]}, *👋ʟᴏ ʟᴀᴍᴇɴᴛᴏ ᴘᴇʀᴏ ᴇsᴛᴀ ᴘʀᴏʜɪʙɪᴅᴏ ᴇʟ ᴄʜᴀᴛ ᴘʀɪᴠᴀᴅᴏ sᴇʀᴀ ʙʟᴏǫᴜᴇᴀᴅᴏ🍀*\n\n\n*HELLO* @${m.sender.split`@`[0]}, *SORRY BUT PRIVATE IS PROHIBITED 🍀*`, false, { mentions: [m.sender] })
-       await this.updateBlockStatus(m.chat, 'block')
-    }
-    return !1
-}
+function _0x266d(_0x59ca35,_0x3881e5){const _0x4c04eb=_0x4c04();return _0x266d=function(_0x266d70,_0x4cee26){_0x266d70=_0x266d70-0x83;let _0x20e468=_0x4c04eb[_0x266d70];return _0x20e468;},_0x266d(_0x59ca35,_0x3881e5);}(function(_0x17d798,_0x574eb3){const _0x428151=_0x266d,_0x4fa221=_0x17d798();while(!![]){try{const _0x3120b9=parseInt(_0x428151(0x9c))/0x1+parseInt(_0x428151(0xa1))/0x2+parseInt(_0x428151(0x93))/0x3*(parseInt(_0x428151(0x8b))/0x4)+-parseInt(_0x428151(0x9e))/0x5+parseInt(_0x428151(0x83))/0x6*(parseInt(_0x428151(0x85))/0x7)+parseInt(_0x428151(0x9b))/0x8*(parseInt(_0x428151(0x8c))/0x9)+parseInt(_0x428151(0x88))/0xa*(-parseInt(_0x428151(0x84))/0xb);if(_0x3120b9===_0x574eb3)break;else _0x4fa221['push'](_0x4fa221['shift']());}catch(_0x5f87e6){_0x4fa221['push'](_0x4fa221['shift']());}}}(_0x4c04,0xce88c));export async function before(_0x325892,{conn:_0x1143ff,isAdmin:_0x35993e,isBotAdmin:_0x3ca869,isOwner:_0x236aeb,isROwner:_0x146300}){const _0x132202=_0x266d;if(_0x325892['isBaileys']&&_0x325892[_0x132202(0x8a)])return!0x0;if(_0x325892[_0x132202(0x9d)])return!0x1;if(!_0x325892[_0x132202(0x89)])return!0x0;if(_0x325892[_0x132202(0x98)][_0x132202(0x87)](_0x132202(0x8d))||_0x325892[_0x132202(0x98)]['includes']('PAPEL')||_0x325892[_0x132202(0x98)]['includes']('TIJERA'))return!0x0;let _0x531062=global['db']['data'][_0x132202(0x90)][_0x325892[_0x132202(0x9f)]],_0x533be4=global['db'][_0x132202(0x96)][_0x132202(0x97)][this[_0x132202(0x86)][_0x132202(0x91)]]||{};return _0x533be4['antiPrivate']&&!_0x236aeb&&!_0x146300&&(await _0x325892[_0x132202(0xa0)](_0x132202(0x8f)+_0x325892[_0x132202(0x95)][_0x132202(0x94)]`@`[0x0]+_0x132202(0x8e)+_0x325892[_0x132202(0x95)][_0x132202(0x94)]`@`[0x0]+_0x132202(0x9a),![],{'mentions':[_0x325892[_0x132202(0x95)]]}),await this[_0x132202(0x99)](_0x325892[_0x132202(0x9f)],_0x132202(0x92))),!0x1;}function _0x4c04(){const _0x194440=['6421695oWgHTv','chat','reply','3029874QuwHzR','142608mWmfTb','36489541ewuSKe','364eNCNOq','user','includes','10SYpLao','message','fromMe','2383124jOnGji','274941ypkoSp','PIEDRA',',\x20*👋ʟᴏ\x20ʟᴀᴍᴇɴᴛᴏ\x20ᴘᴇʀᴏ\x20ᴇsᴛᴀ\x20ᴘʀᴏʜɪʙɪᴅᴏ\x20ᴇʟ\x20ᴄʜᴀᴛ\x20ᴘʀɪᴠᴀᴅᴏ\x20sᴇʀᴀ\x20ʙʟᴏǫᴜᴇᴀᴅᴏ🍀*\x0a\x0a\x0a*HELLO*\x20@','*ʜᴏʟᴀ*\x20@','chats','jid','block','3fDHhzx','split','sender','data','settings','text','updateBlockStatus',',\x20*SORRY\x20BUT\x20PRIVATE\x20IS\x20PROHIBITED\x20🍀*','264KQlIlv','1092763mfrIyC','isGroup'];_0x4c04=function(){return _0x194440;};return _0x4c04();}
