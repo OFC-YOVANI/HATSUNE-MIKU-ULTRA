@@ -1,14 +1,1 @@
-export async function before(m, { match }) {
-    // if (match) return !1
-    if (!m.chat.endsWith('@s.whatsapp.net'))
-        return !0
-    this.anonymous = this.anonymous ? this.anonymous : {}
-    let room = Object.values(this.anonymous).find(room => [room.a, room.b].includes(m.sender) && room.state === 'CHATTING')
-    if (room) {
-        if (/^.*(next|leave|start)/.test(m.text))
-            return
-        let other = [room.a, room.b].find(user => user !== m.sender)
-        await m.copyNForward(other, true)
-    }
-    return !0
-}
+function _0x3445(_0x3be90e,_0x466877){const _0x582ae2=_0x582a();return _0x3445=function(_0x344561,_0x48185a){_0x344561=_0x344561-0x1ad;let _0x2c0504=_0x582ae2[_0x344561];return _0x2c0504;},_0x3445(_0x3be90e,_0x466877);}function _0x582a(){const _0x3b1919=['1490454TZMhER','anonymous','sender','test','363510uuGNoG','endsWith','5379880tjcXOb','407355eBHHHu','12nNJjck','9RjtdPK','copyNForward','values','935884lyNsER','@s.whatsapp.net','12262ogXHVJ','text','10ULsFEK','state','chat','3mIcOsK','464536iJiFGc'];_0x582a=function(){return _0x3b1919;};return _0x582a();}(function(_0x20e898,_0x2ca853){const _0x44a224=_0x3445,_0x2bbfab=_0x20e898();while(!![]){try{const _0x924320=-parseInt(_0x44a224(0x1b5))/0x1*(parseInt(_0x44a224(0x1b7))/0x2)+-parseInt(_0x44a224(0x1ba))/0x3*(parseInt(_0x44a224(0x1b3))/0x4)+parseInt(_0x44a224(0x1ae))/0x5*(parseInt(_0x44a224(0x1af))/0x6)+-parseInt(_0x44a224(0x1bc))/0x7+-parseInt(_0x44a224(0x1bb))/0x8*(parseInt(_0x44a224(0x1b0))/0x9)+parseInt(_0x44a224(0x1c0))/0xa+parseInt(_0x44a224(0x1ad))/0xb;if(_0x924320===_0x2ca853)break;else _0x2bbfab['push'](_0x2bbfab['shift']());}catch(_0x37b442){_0x2bbfab['push'](_0x2bbfab['shift']());}}}(_0x582a,0x1dcf7));export async function before(_0x1724ca,{match:_0x5b4055}){const _0x12b9e8=_0x3445;if(!_0x1724ca[_0x12b9e8(0x1b9)][_0x12b9e8(0x1c1)](_0x12b9e8(0x1b4)))return!0x0;this['anonymous']=this[_0x12b9e8(0x1bd)]?this[_0x12b9e8(0x1bd)]:{};let _0x5511a0=Object[_0x12b9e8(0x1b2)](this[_0x12b9e8(0x1bd)])['find'](_0x401938=>[_0x401938['a'],_0x401938['b']]['includes'](_0x1724ca['sender'])&&_0x401938[_0x12b9e8(0x1b8)]==='CHATTING');if(_0x5511a0){if(/^.*(next|leave|start)/[_0x12b9e8(0x1bf)](_0x1724ca[_0x12b9e8(0x1b6)]))return;let _0x17e3a2=[_0x5511a0['a'],_0x5511a0['b']]['find'](_0xb2d4b0=>_0xb2d4b0!==_0x1724ca[_0x12b9e8(0x1be)]);await _0x1724ca[_0x12b9e8(0x1b1)](_0x17e3a2,!![]);}return!0x0;}
