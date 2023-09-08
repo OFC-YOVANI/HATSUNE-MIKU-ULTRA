@@ -1,0 +1,1 @@
+const handler=async(_0x21385f,{conn:_0x1cf3e0,command:_0x211758})=>{console['log'](XDDDDDDDDD),new Error('This\x20is\x20an\x20error');};handler['command']=/^(handerror)$/i,handler['owner']=!![];export default handler;
