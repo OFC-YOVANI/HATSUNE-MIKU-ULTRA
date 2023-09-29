@@ -1,10 +1,10 @@
 {
-  "name": "HATSUNE-MIKU-ULTRA",
-  "website": "https://youtube.com/@hades_bot2391",
-  "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git",
+  "name": "HADES-BOT-MD",
+  "website": "https://github.com/OFC-YOVANI",
+  "description": "subscribe to the channel HADES-BOT (≧▽≦)",
+  "repository": "https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.hit",
   "logo": "https://i.imgur.com/AmzlKVi.jpeg",
-  "success_url": "",
+  "success_url": "https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA",
   "keywords": [
     "nodejs",
     "heroku",
@@ -14,12 +14,15 @@
     "spanish",
     "whatsapp",
     "termux",
-    "shadow",
+    "miku",
     "multi-device",
     "md",
     "whatsappbot",
     "oficial",
     "whatsapp-md",
+    "thehadesbot",
+    "themiku-bot",
+    "themiku-bot-md"],
   "image": "heroku/nodejs",
   "buildpacks": [
     {
