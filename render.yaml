@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: themiku-bot-md
+    name: thehades-bot-md
     env: docker
     region: Frankfurt
     plan: free
